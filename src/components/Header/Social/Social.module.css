@@ -1,0 +1,8 @@
+.wrap {
+    display: flex;
+    gap: 20px;
+
+}
+.wrap > a:hover {
+    fill:#33394C;
+}

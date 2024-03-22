@@ -1,0 +1,16 @@
+.wrap {
+    display: flex;
+    gap: 32px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.014em;
+
+    color: #00071F;
+}
+.wrap > a:hover{
+    color:#33394C;
+}
+.wrap > a{
+    text-decoration: none;
+}
