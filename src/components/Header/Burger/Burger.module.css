@@ -1,0 +1,17 @@
+.wrap {
+    border: none;
+    color: #00071F;
+    background: none;
+    cursor: pointer;
+    display: none;
+
+}
+.wrap:hover {
+    fill:#33394C;
+}
+
+@media screen and (max-width: 1024px) {
+    .wrap {
+        display: block;
+    }
+}
