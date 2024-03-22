@@ -17,3 +17,8 @@
     border: solid #0057FF;
     cursor: pointer;
 }
+@media screen and (max-width: 425px) {
+    .wrap{
+        display: none;
+    }
+}

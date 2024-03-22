@@ -6,3 +6,8 @@
 .wrap > a:hover {
     fill:#33394C;
 }
+@media screen and (max-width: 425px) {
+    .wrap {
+        display: none;
+    }
+}

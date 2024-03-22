@@ -2,3 +2,8 @@
     color: red;
 
 }
+@media screen and (max-width: 425px) {
+    .wrap {
+        width: 170px;
+    }
+}

@@ -3,21 +3,38 @@
     grid-template-columns: auto 1fr repeat(2,auto);
     grid-template-rows: 1fr;
     grid-column-gap: 32px;
-    grid-row-gap: 0px;
+    grid-template-areas: "logo navbar social buttonCall burger";
+    grid-row-gap: 0;
     justify-content: space-between;
     align-items: center;
+    min-height: 78px;
+    padding: 16px 0;
 
 }
 .navbar {
-    grid-area: 1/1/5/5;
+    grid-area: navbar;
     justify-self: center;
 }
 .logo {
-    grid-area: 1/1/2/2;
+    grid-area: logo;
 }
 .buttonCall {
-    grid-area: 1/4/2/5;
+    grid-area: buttonCall;
 }
 .social {
-    grid-area: 1/3/2/4;
+    grid-area: social;
 }
+.burger{
+    grid-area: burger;
+}
+@media screen and (max-width: 1024px) {
+    .wrap {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 32px;
+        grid-row-gap: 32px;
+
+    }
+}
+
+
