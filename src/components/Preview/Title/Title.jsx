@@ -4,7 +4,9 @@ import cn from "classnames";
 function Title(props) {
     return (
         <>
-            <div className={cn(styles.wrap, props.className)}></div>
+            <div className={cn(styles.wrap, props.className)}>Ипотека здесь:<br/>
+                Дом мечты-<br/>
+                Это реально</div>
         </>
 
     );

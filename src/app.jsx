@@ -7,12 +7,14 @@ import Social from "./components/Header/Social";
 import Logo from "./components/Header/Logo";
 import Header from "./components/Header";
 import styles from "./components/Header/Header.module.css";
+import Preview from "./components/Preview";
 
 function App() {
   return (
     <>
       <div className="container" >
           <Header/>
+          <Preview/>
       </div>
 
     </>

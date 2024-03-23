@@ -1,4 +1,5 @@
-.wrap {
-    color: red;
+.wrap{
+    display: flex;
+    justify-content: space-between;
 
 }

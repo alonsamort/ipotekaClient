@@ -1,4 +1,28 @@
 .wrap {
-    color: red;
+
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.01em;
+    padding: 16px 16px;
+    border-radius: 100px;
+      color: #FFFFFF;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 260px;
+
+    cursor: pointer;
+
+    background: linear-gradient(88.67deg, #0057FF 5.1%, #00C2FF 96.41%);
+
+
+
+}
+.wrap:hover {
+      color: #F7F8F8;
+        background: linear-gradient(88.67deg, #3379FF 5.1%, #33CEFF 96.41%);
+
 
 }

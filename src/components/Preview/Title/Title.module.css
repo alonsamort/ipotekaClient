@@ -1,4 +1,8 @@
 .wrap {
-    color: red;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 78px;
+    letter-spacing: -0.02em;
+    color: #00071F;
 
 }
