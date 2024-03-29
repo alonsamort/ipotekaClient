@@ -3,7 +3,7 @@
     color: #00071F;
     background: none;
     cursor: pointer;
-    display: none;
+
 
 }
 .wrap:hover {
@@ -11,7 +11,5 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .wrap {
-        display: block;
-    }
+
 }

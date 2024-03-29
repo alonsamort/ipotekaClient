@@ -1,5 +1,8 @@
 .wrap{
     display: flex;
     justify-content: space-between;
-margin-top: 60px;
+
+}
+.text{
+    padding-top: 72px;
 }

@@ -5,10 +5,11 @@ import Navbar from "./Navbar";
 import Social from "./Social";
 import ButtonContact from "./ButtonContact";
 import Burger from "./Burger";
+import cn from "classnames";
 
 function Header(props) {
     return (
-        <div className={styles.wrap}>
+        <div className={cn(styles.wrap, props.className)}>
 
             <Logo className={styles.logo}></Logo>
             <Navbar className={styles.navbar}></Navbar>
