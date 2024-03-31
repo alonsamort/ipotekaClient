@@ -1,4 +1,19 @@
 .wrap {
-    color: red;
+    display: grid;
 
+    justify-content: center;
+
+margin: 132px 0 92px 0px;
+
+
+}
+.banks {
+
+
+
+
+}
+.title {
+    justify-self: center;
+    padding-bottom: 32px;
 }

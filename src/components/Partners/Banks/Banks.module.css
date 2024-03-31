@@ -1,4 +1,26 @@
 .wrap {
-    color: red;
+    color: #00071F;
+    max-width: 1057px;
+    justify-content: center;
+
+
+}
+
+.column1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    gap: 64px;
+    padding-bottom: 64px;
+}
+
+.column2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+
+
+    justify-items: center;
+
 
 }

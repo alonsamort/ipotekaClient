@@ -7,8 +7,8 @@ function Partners(props) {
     return (
         <>
             <div className={cn(styles.wrap, props.className)}>
-                <Title/>
-                <Banks/>
+                <Title className={styles.title}/>
+                <Banks className={styles.banks}/>
             </div>
         </>
 
