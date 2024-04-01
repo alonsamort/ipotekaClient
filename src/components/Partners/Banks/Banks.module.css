@@ -1,23 +1,26 @@
 .wrap {
     color: #00071F;
     max-width: 1057px;
-    justify-content: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
 
 
 }
 
 .column1 {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    align-items: center;
+    display: flex;
+    justify-content: center;
     gap: 64px;
-    padding-bottom: 64px;
+    align-items: center;
+
 }
 
 .column2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    align-items: center;
+    justify-content: center;
 
 
     justify-items: center;
