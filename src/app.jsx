@@ -10,6 +10,7 @@ import styles from "./app.module.css";
 import Preview from "./components/Preview";
 import Partners from "./components/Partners";
 import Zigzag from "./components/Zigzag";
+import Advantage from "./components/Advantage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Preview className={styles.preview}/>
           <Partners/>
           <Zigzag/>
+          <Advantage/>
       </div>
 
     </>
