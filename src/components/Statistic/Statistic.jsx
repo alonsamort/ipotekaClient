@@ -7,12 +7,15 @@ function Statistic(props) {
     return (
         <>
             <div className={cn(styles.wrap, props.className)}>
-                <Mark  title="500+"
-                descriprion="Довольных клиентов"/>
-                <Mark  title="300+"
-                       descriprion="Успешно завершенных сделок"/>
-                <Mark  title="99%"
-                       descriprion="Одобренных заявок"/>
+                <Mark title="500+"
+                      size="md"
+                      descriprion="Довольных клиентов"/>
+                <Mark title="300+"
+                      size="md"
+                      descriprion="Успешно завершенных сделок"/>
+                <Mark title="99%"
+                      size="md"
+                      descriprion="Одобренных заявок"/>
 
             </div>
         </>

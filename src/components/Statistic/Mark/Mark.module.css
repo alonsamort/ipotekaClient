@@ -20,6 +20,17 @@
 
 
 }
+.titleSm{
+
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 68px;
+    letter-spacing: -0.02em;
+
+    color: #00071F;
+
+}
+
 .descriprion{
 margin: 0;
     font-weight: 400;
