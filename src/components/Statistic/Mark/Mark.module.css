@@ -1,0 +1,33 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+}
+.title{
+    margin: 0;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 78px;
+    letter-spacing: -0.02em;
+
+    background: linear-gradient(88.67deg, #0057FF 5.1%, #00C2FF 96.41%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+
+}
+.descriprion{
+margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.012em;
+
+    color: #666A79;
+
+
+}

@@ -2,7 +2,9 @@
     display: grid;
     justify-content: center;
 margin-top: 92px;
+    margin-bottom: 108px;
 }
 .title {
     padding-bottom: 80px;
+
 }

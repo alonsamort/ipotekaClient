@@ -1,0 +1,6 @@
+.wrap{
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+    margin-top: 92px;
+}
