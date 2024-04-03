@@ -1,4 +1,9 @@
 .wrap {
-    color: red;
+display: grid;
 
+    grid-template-columns: repeat(2, 1fr);
+
+max-width: 1190px;
+
+gap: 32px;
 }
