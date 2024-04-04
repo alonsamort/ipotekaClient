@@ -1,17 +1,22 @@
-.preview{
-    margin-top: 72px;
+.preview {
+  margin-top: 72px;
 }
-.header{
-    padding: 16px 0;
+.header {
+  padding: 16px 0;
 }
-.aboutTitle{
-
-  display: flex;
-  justify-content: center;
-margin-top: 92px;
-}
-.comandTitle{
+.aboutTitle {
   display: flex;
   justify-content: center;
   margin-top: 92px;
+}
+.comandTitle {
+  display: flex;
+  justify-content: center;
+  margin-top: 92px;
+}
+.faq {
+  max-width: calc(680px - (48px + 48px));
+  min-width: calc(680px - (48px + 48px));
+
+  margin: 0 auto;
 }
