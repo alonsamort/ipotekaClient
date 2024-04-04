@@ -1,4 +1,36 @@
 .wrap {
-    color: red;
+  display: grid;
+  grid-template-areas:
+    "label button"
+    "text text";
+  grid-template-columns: 1fr auto;
+  row-gap: 10px;
+  padding: 20px 0;
+  align-items: center;
+}
+.wrap:not(:last-child) {
+  border-bottom: 1px solid #d4d5d9;
+}
+.lable {
+  grid-area: label;
 
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+
+  letter-spacing: -0.016em;
+  color: #00071f;
+}
+.button {
+  grid-area: button;
+}
+.text {
+  grid-area: text;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.012em;
+
+  color: #33394c;
 }
