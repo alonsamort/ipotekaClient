@@ -15,6 +15,8 @@ import Statistic from "./components/Statistic";
 import Mark from "./components/Statistic/Mark";
 import AboutCompany from "./components/AboutCompany";
 import Heading from "./components/Heading";
+import React from "react";
+import Command from "./components/Command";
 
 function App() {
   return (
@@ -28,8 +30,12 @@ function App() {
           <Zigzag/>
           <Statistic/>
           <Zigzag/>
-
+          <Heading className={styles.aboutTitle} title="О нашей компании"/>
           <AboutCompany/>
+          <Zigzag/>
+          <Heading className={styles.comandTitle} title="Наша команда"/>
+          <Command/>
+          <Zigzag/>
 
       </div>
 

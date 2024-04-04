@@ -4,3 +4,14 @@
 .header{
     padding: 16px 0;
 }
+.aboutTitle{
+
+  display: flex;
+  justify-content: center;
+margin-top: 92px;
+}
+.comandTitle{
+  display: flex;
+  justify-content: center;
+  margin-top: 92px;
+}
