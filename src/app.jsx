@@ -1,5 +1,4 @@
-
-import './app.module.css';
+import "./app.module.css";
 
 import ButtonContact from "./components/Header/ButtonContact";
 import Navbar from "./components/Header/Navbar";
@@ -18,28 +17,29 @@ import Heading from "./components/Heading";
 import React from "react";
 import Command from "./components/Command";
 import Programs from "./components/Programs";
+import FaqHomeLayout from "./components/FAQ/FAQ.Home.layout";
 
 function App() {
   return (
     <>
-      <div className="container" >
-          <Header className={styles.header}/>
-          <Preview className={styles.preview}/>
-          <Partners/>
-          <Zigzag/>
-          <Advantage/>
-          <Zigzag/>
-          <Statistic/>
-          <Zigzag/>
-          <Heading className={styles.aboutTitle} title="О нашей компании"/>
-          <AboutCompany/>
-          <Zigzag/>
-          <Heading className={styles.comandTitle} title="Наша команда"/>
-          <Command/>
-          <Zigzag/>
-<Programs/>
+      <div className="container">
+        <Header className={styles.header} />
+        <Preview className={styles.preview} />
+        <Partners />
+        <Zigzag />
+        <Advantage />
+        <Zigzag />
+        <Statistic />
+        <Zigzag />
+        <Heading className={styles.aboutTitle} title="О нашей компании" />
+        <AboutCompany />
+        <Zigzag />
+        <Heading className={styles.comandTitle} title="Наша команда" />
+        <Command />
+        <Zigzag />
+        <Programs />
+        <FaqHomeLayout />
       </div>
-
     </>
   );
 }
