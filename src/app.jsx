@@ -13,6 +13,8 @@ import Zigzag from "./components/Zigzag";
 import Advantage from "./components/Advantage";
 import Statistic from "./components/Statistic";
 import Mark from "./components/Statistic/Mark";
+import AboutCompany from "./components/AboutCompany";
+import Heading from "./components/Heading";
 
 function App() {
   return (
@@ -25,6 +27,9 @@ function App() {
           <Advantage/>
           <Zigzag/>
           <Statistic/>
+          <Zigzag/>
+
+          <AboutCompany/>
 
       </div>
 
