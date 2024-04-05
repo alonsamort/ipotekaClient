@@ -24,32 +24,41 @@ const FAQHomeData = [
     userId: 1,
     id: 1,
     title:
-      "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-    body: "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+      "Что такое ипотека и как она работает?",
+    body: "Ипотека - это вид кредита, предоставляемого на покупку недвижимости. Вы получаете ссуду под залог жилья,и\nплатите  её по частям в течение определенного срока.\n",
+
   },
   {
     userId: 1,
     id: 2,
-    title: "qui est esse",
-    body: "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
+    title: "Что такое первоначальный взнос и как его рассчитать?",
+    body: "Первоначальный взнос - это сумма, которую вы оплачиваете при покупке недвижимости. Его размер обычно составляет от 10% \n" +
+        "до 30% от стоимости недвижимости.",
   },
   {
     userId: 1,
     id: 3,
-    title: "ea molestias quasi exercitationem repellat qui ipsa sit aut",
-    body: "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut",
+    title: "Могу ли я досрочно погасить ипотеку?",
+    body: "Да, многие ипотечные кредиты позволяют досрочное \n" +
+        "погашение без штрафов.",
   },
   {
     userId: 1,
     id: 4,
-    title: "eum et est occaecati",
-    body: "ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iure\nquis sunt voluptatem rerum illo velit",
+    title: "Какие документы понадобятся для \n" +
+        "получения ипотеки?",
+    body: "Обычно требуются паспорт, справка о доходах, выписка из трудовой книжки, и документы на приобретаемое жилье.",
   },
   {
     userId: 1,
     id: 5,
-    title: "nesciunt quas odio",
-    body: "repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque",
+    title: "Какую роль играет кредитная\n" +
+        "история в процессе получения ипотеки?",
+    body: "Банки и кредиторы оценивают вашу кредитную историю, чтобы определить вашу кредитоспособность. Если у вас хорошая кредитная история, шансы на одобрение кредита выше. Обратно, плохая кредитная история может привести к отказу или к высоким процентным ставкам. \n" +
+        "Важно следить за состоянием своей кредитной истории \n" +
+        "и принимать меры для ее улучшения, если это необходимо, до того, как подавать заявку на ипотеку. Заранее получите копии своего кредитного отчета, проверьте его на ошибки\n" +
+        "и своевременно исправляйте возможные проблемы. \n" +
+        "Это поможет вам получить более выгодные условия ипотечного кредита.",
   },
 ];
 
@@ -71,8 +80,10 @@ function App() {
         <Heading className={styles.comandTitle} title="Наша команда" />
         <Command />
         <Zigzag />
-        <Programs />
+        <Heading className={styles.comandTitle} title="Часто задаваемые вопросы" />
         <Faq data={FAQHomeData} className={styles.faq} />
+        <Programs />
+
       </div>
     </>
   );

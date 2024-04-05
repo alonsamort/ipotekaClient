@@ -6,17 +6,16 @@ function FaqHomeLayout(props) {
   return (
     <>
       <div className={cn(styles.wrap, props.className)}>
-        <Aq lable="Lorem ipsum dolor sit.">
+        <Aq lable="Что такое ипотека и как она работает?">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem illum
           nobis quam sit beatae quaerat architecto, explicabo nulla quasi omnis!
         </Aq>
         <Aq lable="Lorem ipsum dolor sit.">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem illum
+         dddllum
           nobis quam sit beatae quaerat architecto, explicabo nulla quasi omnis!
         </Aq>
         <Aq lable="Lorem ipsum dolor sit.">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem illum
-          nobis quam sit beatae quaerat architecto, explicabo nulla quasi omnis!
+          Lccdi omnis!
         </Aq>
         <Aq lable="Lorem ipsum dolor sit.">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem illum
