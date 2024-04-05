@@ -1,0 +1,78 @@
+
+:root {
+    --custom-red: #FCD9DE;
+    --custom-blue: #CCDDFF;
+    --custom-green: #D0F5E1;
+    --custom-yellow: #FFF3D1;
+    --custom-purple: #E1D6FF;
+    --custom-orange: #FFE1D6;
+
+
+}
+.wrap {
+
+    display: grid;
+    grid-template-rows:  1fr;
+    padding: 24px;
+    max-width: 280px;
+    justify-content: left;
+    border-radius: 24px;
+
+}
+
+.badge {
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+
+
+    color: #00071F;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 8px;
+        gap: 10px;
+
+        max-width: 74px;
+        height: 28px;
+
+        background: #FFFFFF;
+        border-radius: 24px;
+    margin: 0;
+}
+
+.title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.016em;
+
+    color: #00071F;
+margin-bottom: 10px;
+}
+.content{
+    padding-top: 16px;
+}
+.red {
+    background-color: var(--custom-red);
+}
+.blue {
+    background-color: var(--custom-blue);
+}
+.green {
+    background-color: var(--custom-green);
+}
+.yellow {
+    background-color: var(--custom-yellow);
+}
+.purple {
+    background-color: var(--custom-purple);
+}
+.orange {
+    background-color: var(--custom-orange);
+}

@@ -17,6 +17,7 @@ import AboutCompany from "./components/AboutCompany";
 import Heading from "./components/Heading";
 import React from "react";
 import Command from "./components/Command";
+import Programs from "./components/Programs";
 
 function App() {
   return (
@@ -36,7 +37,7 @@ function App() {
           <Heading className={styles.comandTitle} title="Наша команда"/>
           <Command/>
           <Zigzag/>
-
+<Programs/>
       </div>
 
     </>

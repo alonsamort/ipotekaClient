@@ -1,8 +1,8 @@
 .wrap {
   display: flex;
   margin-top: 80px;
-  justify-content: center;
-  gap: 32px;
-   margin-bottom: 92px;
+  justify-content: space-between;
+
+     margin-bottom: 92px;
 
 }
