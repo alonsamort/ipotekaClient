@@ -1,0 +1,9 @@
+.wrap {
+    color: red;
+    border: 1px solid black;
+}
+
+.mark {
+    position: absolute;
+    transform: translateY(-30px);
+}
