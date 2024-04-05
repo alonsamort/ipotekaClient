@@ -18,6 +18,8 @@ import React from "react";
 import Command from "./components/Command";
 import Programs from "./components/Programs";
 import Faq from "./components/FAQ";
+import Service from "./components/Service";
+import { cards } from "./components/Service/data";
 
 const FAQHomeData = [
   {
@@ -83,7 +85,7 @@ function App() {
         <Heading className={styles.comandTitle} title="Часто задаваемые вопросы" />
         <Faq data={FAQHomeData} className={styles.faq} />
         <Programs />
-
+        <Service data={cards} className={styles.service} />
       </div>
     </>
   );
