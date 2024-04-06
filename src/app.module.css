@@ -20,3 +20,11 @@
 
   margin: 0 auto;
 }
+.service{
+  margin-top: 92px;
+}
+.container {
+  max-width: 1190px;
+  margin: 0 auto;
+  align-items: center;
+}
