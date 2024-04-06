@@ -1,3 +1,6 @@
+.wrap{
+    margin-top: 120px;
+}
 .content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -14,7 +17,8 @@
     align-items: center;
 }
 .more{
-
+border: none;
+    cursor: pointer;
     font-weight: 500;
     font-size: 18px;
     line-height: 26px;

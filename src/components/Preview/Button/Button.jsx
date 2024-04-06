@@ -1,11 +1,16 @@
 import React from 'react';
 import styles from './Button.module.css';
 import cn from "classnames";
+import { motion } from 'framer-motion';
 
 function Button(props) {
     return (
         <>
-            <button className={cn(styles.wrap, props.className)}>
+
+            <motion.button className={cn(styles.wrap, props.className)}
+                           whileHover={{ scale: 1.1 }} // Анимация при наведении
+                           transition={{ type: 'spring', stiffness: 400, damping: 10 }} // Параметры анимации
+            >
                 Получить консультацию
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="white"
                      xmlns="http://www.w3.org/2000/svg">
@@ -14,7 +19,7 @@ function Button(props) {
                     />
                 </svg>
 
-            </button>
+            </motion.button>
         </>
 
     );
