@@ -21,10 +21,16 @@
   margin: 0 auto;
 }
 .service{
-  margin-top: 92px;
+  margin-top: 116px;
 }
-.container {
-  max-width: 1190px;
-  margin: 0 auto;
-  align-items: center;
+.serviceTitle{
+  margin-top: 185px;
+  display: flex;
+  justify-content: center;
+}
+.advantageTitle{
+  margin-top: 92px;}
+.faqTitle{
+  margin-top: 92px;
+  margin-bottom: 80px;
 }

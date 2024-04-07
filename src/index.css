@@ -15,7 +15,11 @@ p {
   color: #00071f;
   font-style: normal;
 }
-
+.container {
+  max-width: 1190px;
+  margin: 0 auto;
+  align-items: center;
+}
 @media screen and (max-width: 1024px) {
   .container {
     padding: 0 64px;

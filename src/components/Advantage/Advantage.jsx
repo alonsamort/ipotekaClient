@@ -8,7 +8,7 @@ function Advantage(props) {
     return (
         <>
             <div className={cn(styles.wrap, props.className)}>
-                <Title className={styles.title} />
+
                 <CardsBlock></CardsBlock>
 
             </div>

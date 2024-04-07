@@ -60,28 +60,37 @@ const FAQHomeData = [
         "Это поможет вам получить более выгодные условия ипотечного кредита.",
   },
 ];
+const sectionHeadings = {
+  advantage:"Почему обращаются к нам",
+  about: "О нашей компании",
+  team: "Наша команда",
+  faq: "Часто задаваемые вопросы",
+  services: "Услуги",
+};
 
 function App() {
   return (
     <>
-      <div className={styles.container}>
+      <div className="container">
         <Header className={styles.header} />
         <Preview className={styles.preview} />
         <Partners />
         <Zigzag />
+        <Heading className={`${styles.advantageTitle} ${styles.centered}`} title={sectionHeadings.advantage} />
         <Advantage />
         <Zigzag />
         <Statistic />
         <Zigzag />
-        <Heading className={styles.aboutTitle} title="О нашей компании" />
+        <Heading className={`${styles.aboutTitle} ${styles.centered}`} title={sectionHeadings.about} />
         <AboutCompany />
         <Zigzag />
-        <Heading className={styles.comandTitle} title="Наша команда" />
+        <Heading className={`${styles.comandTitle} ${styles.centered}`} title={sectionHeadings.team} />
         <Command />
         <Zigzag />
-        <Heading className={styles.comandTitle} title="Часто задаваемые вопросы" />
+        <Heading className={`${styles.faqTitle} ${styles.centered}`} title={sectionHeadings.faq} />
         <Faq data={FAQHomeData} className={styles.faq} />
         <Programs />
+        <Heading className={`${styles.serviceTitle} ${styles.centered}`} title={sectionHeadings.services} />
         <Service data={cards} className={styles.service} />
       </div>
     </>
