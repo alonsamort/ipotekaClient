@@ -17,6 +17,10 @@ import Programs from "./components/Programs";
 import Faq from "./components/FAQ";
 import Service from "./components/Service";
 import { cards } from "./components/Service/data";
+import Stages from "./components/Stages";
+import {cards as cardStage} from "./components/Stages/data"
+
+
 
 const FAQHomeData = [
   {
@@ -66,6 +70,7 @@ const sectionHeadings = {
   team: "Наша команда",
   faq: "Часто задаваемые вопросы",
   services: "Услуги",
+  stages: "Этапы оформления ипотеки ",
 };
 
 function App() {
@@ -92,6 +97,9 @@ function App() {
         <Programs />
         <Heading className={`${styles.serviceTitle} ${styles.centered}`} title={sectionHeadings.services} />
         <Service data={cards} className={styles.service} />
+        <Zigzag />
+        <Heading className={`${styles.stagesTitle} ${styles.centered}`} title={sectionHeadings.stages} />
+        <Stages data={cardStage} className={styles.stages}/>
       </div>
     </>
   );

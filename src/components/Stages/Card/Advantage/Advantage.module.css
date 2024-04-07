@@ -1,0 +1,22 @@
+.text {
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.012em;
+
+    color: #00071F;
+}
+.item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+
+}
+.wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+}

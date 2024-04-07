@@ -6,7 +6,7 @@ function Subtitle(props) {
         <>
             <div className={cn(styles.wrap, props.className)}>
                 Откройте двери своего нового дома<br/>
-                с нашим ипотечным центром.
+                с нашим ипотечным центром
             </div>
         </>
 
