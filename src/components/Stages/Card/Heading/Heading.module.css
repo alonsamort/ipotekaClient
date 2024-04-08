@@ -10,13 +10,14 @@
     font-size: 30px;
     line-height: 36px;
     letter-spacing: -0.018em;
+max-width: 300px;
 
     color: #00071F;
 
 }
 
 .subtitle {
-
+max-width: 330px;
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;
