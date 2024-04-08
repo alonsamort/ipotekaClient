@@ -1,0 +1,45 @@
+.wrap {
+    width: 48px;
+    height: 48px;
+position: absolute;
+    transform: translateY(-20px)translateX(310px) ;
+    align-items: center;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+
+    background: linear-gradient(88.67deg, #0057FF 5.1%, #00C2FF 96.41%);
+    border-radius: 100px;
+
+}
+.number{
+position: absolute;
+    transform: translateY(-5px)translateX(1px) rotate(17deg);
+
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.014em;
+    color: #FFFFFF;
+
+
+}
+.percent{
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+
+    color: #FFFFFF;
+
+
+
+    position: absolute;
+    transform: translateY(12px)translateX(-2px) rotate(20deg);
+
+
+}

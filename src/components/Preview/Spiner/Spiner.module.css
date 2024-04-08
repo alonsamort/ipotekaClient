@@ -1,4 +1,36 @@
 .wrap {
-    color: red;
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translateX(-50%) translateY(-50%);
 
+}
+.spiner{
+    animation: spin 10s linear 0s infinite;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: spin;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal
+
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+
+
+}
+.arrow{
+    position: absolute;
+    transform: translateX(-132px) translateY(0px) ;
 }
