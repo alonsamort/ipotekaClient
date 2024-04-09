@@ -20,6 +20,8 @@ import { cards } from "./components/Service/data";
 import Stages from "./components/Stages";
 import {cards as cardStage} from "./components/Stages/data"
 
+import Form from "./components/Form";
+
 
 
 const FAQHomeData = [
@@ -100,6 +102,7 @@ function App() {
         <Zigzag />
         <Heading className={`${styles.stagesTitle} ${styles.centered}`} title={sectionHeadings.stages} />
         <Stages data={cardStage} className={styles.stages}/>
+<Form className={styles.form}/>
       </div>
     </>
   );

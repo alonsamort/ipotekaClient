@@ -1,8 +1,9 @@
 .wrap {
-    position: absolute;
-    top: 50%;
-    left: 53%;
-    transform: translateX(-50%) translateY(-50%);
+    position: absolute; /* Позиционируем спиннер */
+    top: 50%; /* Помещаем спиннер на вертикальную середину контейнера */
+    left: 690px; /* Прижимаем спиннер к левому краю контейнера */
+    transform: translateY(-50%);
+
 
 }
 .spiner{
