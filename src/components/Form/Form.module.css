@@ -105,3 +105,18 @@ height: 16px;
     background: #FEECEE;
     border: 1px solid #E5102E;
 }
+.personalInfo{
+    padding-top: 10px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    letter-spacing: -0.01em;
+
+    color: #8C8F9A;
+
+}
+.personalInfo>a{
+    color: #0057FF;
+}
