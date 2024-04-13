@@ -19,8 +19,11 @@ import Service from "./components/Service";
 import { cards } from "./components/Service/data";
 import Stages from "./components/Stages";
 import {cards as cardStage} from "./components/Stages/data"
-
 import Form from "./components/Form";
+import Review from "./components/Review";
+import {card} from "./components/Review/data"
+import Contacts from "./components/Contacts";
+import {info} from "./components/Contacts/data"
 
 
 
@@ -73,6 +76,8 @@ const sectionHeadings = {
   faq: "Часто задаваемые вопросы",
   services: "Услуги",
   stages: "Этапы оформления ипотеки ",
+  review:"Отзывы наших клиентов",
+  contacts:"Контакты"
 };
 
 function App() {
@@ -103,6 +108,10 @@ function App() {
         <Heading className={`${styles.stagesTitle} ${styles.centered}`} title={sectionHeadings.stages} />
         <Stages data={cardStage} className={styles.stages}/>
 <Form className={styles.form}/>
+        <Heading className={`${styles.reviewTitle} ${styles.centered}`} title={sectionHeadings.review} />
+      <Review data={card}/>
+        <Heading className={`${styles.contactsTitle} ${styles.centered}`} title={sectionHeadings.contacts} />
+        <Contacts data={info}/>
       </div>
     </>
   );
