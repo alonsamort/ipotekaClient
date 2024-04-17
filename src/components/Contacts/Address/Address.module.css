@@ -1,13 +1,22 @@
+
 .wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 gap: 48px;
 
     align-items: center;
     padding: 60px;
 
-    height: 640px;
+    max-height: 640px;
     background: linear-gradient(88.67deg, #0057FF 5.1%, #00C2FF 96.41%);
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
     border-radius: 24px;
+
+}
+.info{
+display: flex;
+flex-direction: column;
+    width: 420px;
 
 }
 .title {
@@ -21,8 +30,10 @@ gap: 48px;
 width: 420px;
 padding-bottom: 20px;
 }
+
 .text{
     width: 420px;
+    margin-top: 48px;
 }
 .textTitle{
     padding-bottom: 10px;
@@ -36,6 +47,7 @@ padding-bottom: 20px;
 }
 .description{
 
+
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;
@@ -44,23 +56,25 @@ padding-bottom: 20px;
     color: #FFFFFF;
 
 
+
+
 }
 .button{
 
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.01em;
 
    color: #FFFFFF;
-text-align: center;
+
 
     background: none;
-    box-sizing: border-box;
-    align-items: center;
+
+
     padding: 16px;
     gap: 8px;
-
+width: 148px;
     height: 56px;
 
     border: 2px solid #FFFFFF;
@@ -68,6 +82,7 @@ text-align: center;
 
 
 }
-.card{
+.map{
     border-radius: 20px;
+    max-height: 520px;
 }

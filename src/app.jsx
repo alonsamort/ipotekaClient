@@ -111,7 +111,7 @@ function App() {
         <Heading className={`${styles.reviewTitle} ${styles.centered}`} title={sectionHeadings.review} />
       <Review data={card}/>
         <Heading className={`${styles.contactsTitle} ${styles.centered}`} title={sectionHeadings.contacts} />
-        <Contacts data={info}/>
+        <Contacts data={info} className={styles.contacts}/>
       </div>
     </>
   );
