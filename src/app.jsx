@@ -95,7 +95,7 @@ function App() {
         <Zigzag />
         <Statistic />
         <Zigzag />
-        <Heading className={`${styles.aboutTitle} ${styles.centered}`} title={sectionHeadings.about} />
+        <Heading  className={`${styles.aboutTitle} ${styles.centered}`}  title={sectionHeadings.about}/>
         <AboutCompany />
         <Zigzag />
         <Heading className={`${styles.comandTitle} ${styles.centered}`} title={sectionHeadings.team} />

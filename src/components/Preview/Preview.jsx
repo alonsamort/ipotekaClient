@@ -12,7 +12,21 @@ function Preview(props) {
 
                 <Text className={styles.text}></Text>
                 <Images/>
-
+                <img
+                    className={styles.check}
+                    src={"./check.png"} alt={"картинка галочки"}/>
+                <img
+                    className={styles.home}
+                    src={"./home.png"} alt={"картинка дома"}/>
+                <img
+                    className={styles.moeda}
+                    src={"./moeda.png"} alt={"картинка монетки"}/>
+                <img
+                    className={styles.blueBall}
+                    src={"./blueBall.png"} alt={"картинка голубого шарика"}/>
+                <img
+                    className={styles.orangeBall}
+                    src={"./orangeBall.png"} alt={"картинка желтого шарика"}/>
 
             </div>
         </>

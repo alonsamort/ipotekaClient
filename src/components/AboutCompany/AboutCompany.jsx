@@ -4,6 +4,7 @@ import cn from "classnames";
 import Heading from "../Heading";
 import DoubleHeading from "../DoubleHeading";
 import Mark from "../Statistic/Mark";
+
 function AboutCompany(props) {
     return (
         <>

@@ -5,8 +5,10 @@ import Card from './Card';
 
 function Service(props) {
     return (
-        <div className={cn(styles.wrap, props.className)}>
+        <div  className={cn(styles.wrap, props.className)}>
+
             {props.data.map(card => <Card key={card.id} {...card} />)}
+
         </div>
     );
 }
