@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Address.module.css';
 import cn from "classnames";
+
 function Address(props) {
-    return (
-        <>
+    return (<>
             <div className={cn(styles.wrap, props.className)}>
                 <div className={styles.info}>
                     <h2 className={styles.title}>Краснодарский край,

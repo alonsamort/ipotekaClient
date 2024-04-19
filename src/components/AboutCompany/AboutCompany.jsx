@@ -7,7 +7,7 @@ import Mark from "../Statistic/Mark";
 function AboutCompany(props) {
     return (
         <>
-            <div className={cn(styles.wrap, props.className)}>
+            <div className={cn(styles.wrap, props.className)} >
 
                 <img src={"./gift.png"} alt={"подарок"} width={"624px"} height={"536px"}/>
                 <div className={styles.info}>

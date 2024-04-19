@@ -20,7 +20,7 @@ export const info=[{
     contacts: {
 
         title: 'ipoteka.Zdes@yandex.ru',
-        subtitle: 'Общие вопросы',
+        subtitle: 'По общим вопросам',
     },
 }, {
     id: 4,

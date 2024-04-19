@@ -1,0 +1,102 @@
+
+
+
+.contentGrid {
+
+display: grid;
+    grid-template-columns: 1fr repeat(3, auto);
+gap: 80px;
+padding-bottom: 40px;
+
+}
+
+.brandSection {
+width: 260px;
+}
+
+.title {
+margin-bottom: 6px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.018em;
+
+    color: #00071F;
+
+
+
+}
+
+.subtitle {
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.012em;
+
+    color: #666A79;
+
+}
+
+.socialIcons {
+    margin-top: 1.5rem;
+}
+
+.iconLink {
+    margin-right: 1rem;
+}
+
+.sectionTitle {
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.014em;
+
+    color: #00071F;
+
+
+    justify-content: end;
+
+}
+
+.item {
+    display: block;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.012em;
+
+    color: #666A79;
+
+
+    margin: 0.4rem 0;
+}
+.section{
+    max-width: 130px;
+gap: 80px;
+}
+.organizationalInfo{
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+ gap: 20px;
+    padding-top: 40px;
+    border-top: 1px solid #D4D5D9;
+    align-items: center;
+
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+
+    letter-spacing: -0.012em;
+
+
+
+
+}
+.detail{
+    color: #666A79;
+}
+

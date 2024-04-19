@@ -24,6 +24,8 @@ import Review from "./components/Review";
 import {card} from "./components/Review/data"
 import Contacts from "./components/Contacts";
 import {info} from "./components/Contacts/data"
+import Footer from "./components/Footer";
+import {footer} from "./components/Footer/data"
 
 
 
@@ -112,6 +114,7 @@ function App() {
       <Review data={card}/>
         <Heading className={`${styles.contactsTitle} ${styles.centered}`} title={sectionHeadings.contacts} />
         <Contacts data={info} className={styles.contacts}/>
+        <Footer data={footer} className={styles.footer}/>
       </div>
     </>
   );

@@ -9,7 +9,7 @@ import cn from "classnames";
 
 function Header(props) {
     return (
-        <div className={cn(styles.wrap, props.className)}>
+        <div className={cn(styles.wrap, props.className)} >
 
             <Logo className={styles.logo}></Logo>
             <Navbar className={styles.navbar}></Navbar>
