@@ -1,0 +1,57 @@
+.preview {
+  margin-top: 72px;
+}
+.header {
+  padding: 16px 0;
+}
+.aboutTitle {
+  display: flex;
+  justify-content: center;
+  margin-top: 92px;
+}
+.comandTitle {
+  display: flex;
+  justify-content: center;
+  margin-top: 92px;
+}
+.faq {
+  max-width: calc(680px - (48px + 48px));
+  min-width: calc(680px - (48px + 48px));
+
+  margin: 0 auto;
+}
+.service{
+  margin-top: 116px;
+  margin-bottom: 92px;
+}
+.serviceTitle{
+  margin-top: 185px;
+  display: flex;
+  justify-content: center;
+}
+.advantageTitle{
+  margin-top: 92px;}
+.faqTitle{
+  margin-top: 92px;
+  margin-bottom: 80px;
+}
+.stagesTitle{
+  margin-top: 92px;
+}
+.stages{
+  margin-top: 92px;
+}
+.form{
+  margin-top: 92px;
+  margin-bottom: 92px;
+}
+.contactsTitle{
+  margin: 92px;
+}
+.contacts{
+
+}
+.footer{
+  margin-bottom: 92px;
+  margin-top: 125px;
+}

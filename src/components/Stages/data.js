@@ -3,8 +3,8 @@ export const cards = [{
 
     id: 1,
     circle: {
-        number: 10,
-        pct: "%",
+        number: 1,
+
     },
     heading: {
 
@@ -22,8 +22,8 @@ export const cards = [{
     ]},{
     id: 2,
     circle: {
-        number: 25,
-        pct: "%",
+        number: 2,
+
     },
 
     heading: {
@@ -44,8 +44,8 @@ export const cards = [{
     {
         id: 3,
         circle: {
-            number:  40,
-            pct: "%",
+            number:  3,
+
         },
         heading: {
             miniTitle:"ЭТАП 03",
@@ -64,8 +64,8 @@ export const cards = [{
     }, {
         id: 4,
         circle: {
-            number:  50,
-            pct: "%",
+            number:  4,
+
         },
         heading: {
 
@@ -88,8 +88,8 @@ export const cards = [{
     }, {
         id: 5,
         circle: {
-            number:  70,
-            pct: "%",
+            number:  5,
+
         },
         heading: {
             miniTitle:"ЭТАП 05",
@@ -106,8 +106,8 @@ export const cards = [{
     }, {
         id: 6,
         circle: {
-            number:  85,
-            pct: "%",
+            number:  6,
+
         },
         heading: {
             miniTitle: "ЭТАП 06",
@@ -127,8 +127,8 @@ export const cards = [{
     },{
         id: 7,
         circle: {
-            number:  100,
-            pct: "%",
+            number:  7,
+
         },
         heading: {
             miniTitle:"ЭТАП 07",

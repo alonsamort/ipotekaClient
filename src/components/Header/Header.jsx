@@ -7,14 +7,14 @@ import ButtonContact from "./ButtonContact";
 import Burger from "./Burger";
 import cn from "classnames";
 
-function Header(props) {
+function Header({ showButtonContact, showSocial, navbarItems, className }) {
     return (
-        <div className={cn(styles.wrap, props.className)} >
+        <div className={cn(styles.wrap,className)} >
 
             <Logo className={styles.logo}></Logo>
-            <Navbar className={styles.navbar}></Navbar>
-            <Social className={styles.social}></Social>
-            <ButtonContact className={styles.buttonCall}>Связаться с нами</ButtonContact>
+            <Navbar items={navbarItems} className={styles.navbar} ></Navbar>
+            {showSocial && <Social className={styles.social}></Social>}
+            {showButtonContact && <ButtonContact className={styles.buttonCall}>Связаться с нами</ButtonContact>}
 <Burger className={styles.burger}></Burger>
             </div>
     );

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Preview.module.css';
 import cn from "classnames";
-import Text from "../Text/Text";
+import Text from "./Text/Text";
 
 import Images from "./Images";
 

@@ -1,9 +1,12 @@
 import React from 'react';
 import styles from './Text.module.css';
 import cn from "classnames";
-import Title from "../Preview/Title";
-import Subtitle from "../Preview/Subtitle";
-import Button from "../Preview/Button";
+import Title from "../Title";
+import Subtitle from "../Subtitle";
+import Button from "../Button";
+
+
+
 function Text(props) {
     return (
         <>
