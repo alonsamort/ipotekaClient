@@ -7,16 +7,17 @@ import ButtonContact from "./ButtonContact";
 import Burger from "./Burger";
 import cn from "classnames";
 
-function Header({ showButtonContact, showSocial, navbarItems, className }) {
+function Header({showButtonContact, showSocial, navbarItems, className}) {
     return (
-        <div className={cn(styles.wrap,className)} >
+        <div className={cn(styles.wrap, className, {[ styles.otherPage]: !showSocial && !showButtonContact})}
+             style={{gridTemplateAreas: !showSocial && !showButtonContact && " logo navbar "}}>
 
             <Logo className={styles.logo}></Logo>
-            <Navbar items={navbarItems} className={styles.navbar} ></Navbar>
+            <Navbar items={navbarItems} className={styles.navbar}></Navbar>
             {showSocial && <Social className={styles.social}></Social>}
             {showButtonContact && <ButtonContact className={styles.buttonCall}>Связаться с нами</ButtonContact>}
-<Burger className={styles.burger}></Burger>
-            </div>
+            <Burger className={styles.burger}></Burger>
+        </div>
     );
 }
 

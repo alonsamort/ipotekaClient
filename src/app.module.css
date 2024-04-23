@@ -7,13 +7,19 @@
 }
 .otherPage{
     display: flex;
-    align-items: center;
-
-
 }
 .preview{
     margin-top: 92px;
 }
 .scorecard{
     margin-top: 125px;
+    margin-bottom: 92px;
+}
+.centered{
+    display: flex;
+    justify-content: center;
+    margin-top: 92px;
+}
+.listCard{
+    margin-top: 92px;
 }

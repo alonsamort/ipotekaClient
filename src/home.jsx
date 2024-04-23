@@ -81,13 +81,28 @@ const sectionHeadings = {
   review:"Отзывы наших клиентов",
   contacts:"Контакты"
 };
+const navbarItems = [
+  {label: 'О нас'},
+  {label: 'Услуги'},
+  {label: 'Отзывы'},
+  {label: 'Контакты'},
 
+];
 function Home() {
   return (
     <>
       <div className="container">
-        <Header className={styles.header} />
-        <Preview className={styles.preview} />
+        <Header className={styles.header} showButtonContact={true} showSocial={true}
+                navbarItems={navbarItems} />
+        <Preview className={styles.preview} title={(<>Ипотека здесь: <br/>
+          Дом мечты-<br/>
+          Это реально</>)}
+                 textButton="Получить ипотеку"
+                 image="Cards"
+                 width="566px" isIcon={true}>
+          Откройте двери своего нового дома <br/>
+          с нашим ипотечным центром
+        </Preview>
         <Partners />
         <Zigzag />
         <Heading className={`${styles.advantageTitle} ${styles.centered}`} title={sectionHeadings.advantage} />

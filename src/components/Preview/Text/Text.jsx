@@ -12,10 +12,10 @@ function Text(props) {
         <>
             <div className={cn(styles.wrap, props.className)}>
                 <div className={styles.text}>
-                    <Title className={styles.title}></Title>
-                    <Subtitle className={styles.subtitle} ></Subtitle>
+                    <Title className={styles.title}>{props.title}</Title>
+                    <Subtitle className={styles.subtitle} >{props.children}</Subtitle>
                 </div>
-                <Button className={styles.button}></Button>
+                <Button className={styles.button}>{props.textButton}</Button>
             </div>
         </>
 

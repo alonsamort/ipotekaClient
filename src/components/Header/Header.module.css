@@ -28,6 +28,11 @@
     grid-area: burger;
     display: none;
 }
+.otherPage{
+    grid-template-areas: "logo navbar";
+    grid-template-columns: 1fr auto;
+
+}
 @media screen and (max-width: 1024px) {
     .wrap {
 
@@ -38,6 +43,10 @@ grid-template-columns: 1fr repeat(3,auto);
     }
     .burger {
         display: block;
+    }
+    .otherPage{
+        grid-template-areas: "logo burger";
+        grid-template-columns: 1fr auto;
     }
 }
 
