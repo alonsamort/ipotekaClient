@@ -9,7 +9,8 @@
     color: #00071F;
 }
 .wrap > a:hover{
-    color:#33394C;
+    color:#404557;
+    cursor: pointer;
 }
 .wrap > a{
     text-decoration: none;

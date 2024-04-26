@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "classnames": "^2.5.1",
     "framer-motion": "^11.0.25",
+    "imask": "^7.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.51.2",

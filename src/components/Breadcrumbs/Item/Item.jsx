@@ -14,7 +14,7 @@ function Item(props) {
         <>
             <div className={cn(styles.wrap, props.className)} >
                 {items.map((item, index) => (
-                    <span key={index}>
+                    <span className={styles.item} key={index}>
                         <a href={item.link} className={styles.link}>
                             {item.label}
                         </a>

@@ -1,12 +1,12 @@
 .wrap{
     display: flex;
-
-    gap: 20px;
+align-items: center;
+    gap: 10px;
 }
 
 .link{
     text-decoration: none;
-
+margin-right: 6px;
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;
@@ -15,4 +15,8 @@
     color: #666A79;
 
 
+}
+.item{
+    display: flex;
+    align-items: center;
 }
