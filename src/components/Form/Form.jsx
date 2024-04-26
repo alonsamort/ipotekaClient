@@ -21,7 +21,7 @@ function Form(props) {
     return (
         <>
             <div className={cn(styles.wrap, props.className)}>
-                <Header className={styles.header} title="Плохая кредитная история, отказали несколько банков, или нет первого взноса?" subtitle="Не беспокойтесь! Наши специалисты успешно решают сложные ситуации с ипотекой в любом регионе России. Работаем до положительного решения банка. Заполните форму, и вам окажут помощь в решении всех вопросов!" />
+                <Header className={styles.header} title={props.title} subtitle={props.subtitle} />
                 <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
                     <input
                         type="tel"

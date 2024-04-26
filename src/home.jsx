@@ -124,7 +124,8 @@ function Home() {
         <Zigzag />
         <Heading className={`${styles.stagesTitle} ${styles.centered}`} title={sectionHeadings.stages} />
         <Stages data={cardStage} className={styles.stages}/>
-<Form className={styles.form}/>
+<Form className={styles.form} title="Плохая кредитная история, отказали несколько банков,
+или нет первого взноса?" subtitle="Не беспокойтесь! Наши специалисты успешно решают сложные ситуации с ипотекой в любом регионе России. Работаем до положительного решения банка. Заполните форму, и вам окажут помощь в решении всех вопросов!"/>
         <Heading className={`${styles.reviewTitle} ${styles.centered}`} title={sectionHeadings.review} />
       <Review data={card}/>
         <Heading className={`${styles.contactsTitle} ${styles.centered}`} title={sectionHeadings.contacts} />

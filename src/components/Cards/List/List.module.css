@@ -1,0 +1,10 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.title{
+    margin-bottom: 10px;
+}
+

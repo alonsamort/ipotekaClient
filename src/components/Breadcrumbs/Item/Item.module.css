@@ -1,0 +1,18 @@
+.wrap{
+    display: flex;
+
+    gap: 20px;
+}
+
+.link{
+    text-decoration: none;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.012em;
+
+    color: #666A79;
+
+
+}
