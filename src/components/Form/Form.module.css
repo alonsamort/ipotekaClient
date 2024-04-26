@@ -91,6 +91,10 @@ cursor: pointer;
 
 
 }
+.button:hover{
+    color: #F7F8F8;
+    background: linear-gradient(88.67deg, #3379FF 5.1%, #33CEFF 96.41%);
+}
 .error{
 
     font-weight: 400;

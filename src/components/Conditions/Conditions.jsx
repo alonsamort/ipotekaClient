@@ -3,7 +3,7 @@ import styles from './Conditions.module.css';
 import cn from "classnames";
 import { CardsList} from "../Cards/Cards";
 import List from "../Cards/List";
-import Spiner from "../Preview/Images/Spiner";
+
 import Button from "../Preview/Button";
 
 export const defaultItems = [
@@ -24,7 +24,7 @@ function Conditions(props) {
     return (
         <>
             <div className={cn(styles.wrap, props.className)} style={{flexDirection: props.flexDirection}}>
-                <div className={styles.info}><CardsList className={styles.cardsList} items={items} icon={props.icon}>
+                <div className={styles.info}><CardsList className={styles.cardsList} items={items} icon={props.icon} >
                 </CardsList>
                     {props.button && (
                         <Button disableAnimation={true} className={styles.button}>Получить страхование</Button>

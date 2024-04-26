@@ -1,0 +1,77 @@
+
+.container {
+    max-width: 1190px;
+    margin: 0 auto;
+    align-items: center;
+    min-height: 78px;
+}
+.otherPage{
+    display: flex;
+}
+.preview{
+    margin-top: 92px;
+}
+.scorecard{
+    margin-top: 125px;
+    margin-bottom: 92px;
+}
+.centered{
+    display: flex;
+    justify-content: center;
+    margin-top: 92px;
+}
+.cardsList{
+    margin-top: 92px;
+    display: flex;
+
+    gap: 24px;
+}
+.conditions{
+    margin-top: 80px;
+    margin-bottom: 140px;
+}
+.conditions2{
+    margin-bottom: 92px;
+}
+.form{
+    margin-top: 92px;
+    margin-bottom: 92px;
+}
+.header{
+
+}
+.insurence{
+
+    align-items: center;
+    padding: 32px;
+
+
+
+    max-height: 541px;
+
+    background: #E5EEFF;
+
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 24px;
+
+}
+.contacts{
+    margin-top: 92px;
+}
+.svg{
+    align-self: center;
+}
+.footer{
+    margin-bottom: 92px;
+    margin-top: 120px;
+}
+.breadcrumbs{
+    margin-top: 120px;
+}
+.stagesTitle{
+    margin-top: 140px;
+}
+.stages{
+    margin-top: 92px;
+    margin-bottom: 214px;
+}

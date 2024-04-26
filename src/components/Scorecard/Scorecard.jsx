@@ -2,13 +2,9 @@ import React from 'react';
 import styles from './Scorecard.module.css';
 import cn from "classnames";
 
-const items = [
-    { title: 'от 5%', subtitle: 'Ипотечная ставка' },
-    { title: '30 лет', subtitle: 'Срок кредита' },
-    { title: '300 тыс.', subtitle: 'Мин. сумма кредита' },
-    { title: '12 млн', subtitle: 'Макс. сумма кредита' },
-];
+
 function Scorecard(props) {
+    const { items } = props;
     return (
         <>
             <div className={cn(styles.wrap, props.className)}>

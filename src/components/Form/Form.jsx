@@ -7,9 +7,9 @@ import IMask from 'imask';
 
 function Form(props) {
     const { register, formState: { errors }, reset, handleSubmit, trigger, setValue } = useForm({});
-    const telephoneRef = useRef(null);
+    const telephoneRef = useRef();
     useEffect(() => {
-        setValue('telephone', '');
+        setValue('telephone');
     }, [setValue]);
 
     useEffect(() => {
@@ -38,7 +38,7 @@ function Form(props) {
                 <Header className={styles.header} title={props.title} subtitle={props.subtitle}/>
                 <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
                     <input
-                        type="tel"
+                        type="text"
                         className={`${styles.inputName} ${errors.firstName ? styles.errorInput : ''}`}
                         {...register('firstName', {
                             required: "Поле необходимо заполнить",
@@ -70,6 +70,10 @@ function Form(props) {
                         })}
                         placeholder="+7 (999) 999-99-99"
                         ref={telephoneRef}
+                        onChange={(e) => {
+                            e.target.value = e.target.value.replace(/\D/g, '').replace(/^(\d{1})(\d{3})(\d{0,3})(\d{0,2})(\d{0,2}).*/, '+7 ($2) $3-$4-$5');
+                            setValue('telephone', e.target.value, { shouldValidate: true, shouldDirty: true });
+                        }}
 
 
                     />
