@@ -20,6 +20,15 @@ import Stages from "./components/Stages";
 import {cards as cardStage} from "./components/Stages/data";
 
 
+const family = [
+    { title: 'от 5%', subtitle: 'Ипотечная ставка' },
+    { title: '30 лет', subtitle: 'Срок кредита' },
+    { title: '300 тыс.', subtitle: 'Мин. сумма кредита' },
+    { title: '12 млн', subtitle: 'Макс. сумма кредита' },
+];
+
+
+
 const navbarItems = [
     {label: 'Условия'},
     {label: 'Как получить ипотеку'},
@@ -85,7 +94,7 @@ function Family(props) {
                 >
                     Откройте двери своего дома с семейной ипотекой.<br/> Ваша история начинается здесь!
                 </Preview>
-                <Scorecard className={styles.scorecard}/>
+                <Scorecard className={styles.scorecard} items={family}/>
                 <Zigzag/>
                 <Heading className={`${styles.aboutTitle} ${styles.centered}`} title={sectionHeadings.conditions}/>
                 <CardsList className={styles.cardsList} padding={"24px"} background items={advantsgeItems} icon={(

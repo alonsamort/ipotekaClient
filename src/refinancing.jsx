@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './secondary.module.css';
+import styles from './refinancing.module.css';
 import cn from "classnames";
 import Header from "./components/Header";
 import Preview from "./components/Preview";
@@ -20,10 +20,10 @@ import Stages from "./components/Stages";
 import {cards as cardStage} from "./components/Stages/data";
 
 const secondary = [
-    { title: 'от 16,5%', subtitle: 'Ипотечная ставка' },
-    { title: '30 лет', subtitle: 'Срок кредита' },
-    { title: '300 тыс.', subtitle: 'Мин. сумма кредита' },
-    { title: '100 млн', subtitle: 'Макс. сумма кредита' },
+    {title: 'от 16%', subtitle: 'Ипотечная ставка'},
+    {title: 'до 30 лет', subtitle: 'Срок кредита'},
+    {title: '300 тыс.', subtitle: 'Мин. сумма кредита'},
+    {title: '30 млн', subtitle: 'Макс. сумма кредита'},
 ];
 const navbarItems = [
     {label: 'Условия'},
@@ -37,23 +37,24 @@ const sectionHeadings = {
     conditions: "Условия ипотеки",
     review: "Отзывы наших клиентов",
     contacts: "Контакты",
-    stages:"Этапы оформления ипотеки"
+    stages: "Этапы оформления ипотеки"
 
 };
 
 
-function Secondary(props) {
+function Refinancing(props) {
 
 
-   const advantsge = [
+    const advantsge = [
         {
-            title: 'Без подтверждения дохода',
-            items: ['Оформление по паспорту', 'Подтверждение доходов не требуется']
+            title: 'Низкие ставки',
+            items: ['Не обязательно дожидаться закрытия первой ипотеки \n' +
+            'для пересмотра процентной ставки', 'Без дополнительных сборов в период регистрации залога']
         },
         {
-            title: 'На срок от 1 до 30 лет',
-            items: ['Выбирайте срок и платёж, который \n' +
-            'подходит именно вам', 'Досрочные погашения в любой момент']
+            title: 'Без справок',
+            items: ['Можно предоставить заявку без необходимости \n' +
+            'предоставления справки о текущей задолженности', 'Возможность одобрения заявки по двум документам']
         },
     ]
 
@@ -61,12 +62,12 @@ function Secondary(props) {
     const newItems = [
         {
             title: 'Требования к заёмщику',
-            items: ['Гражданство — Российская Федерация;', 'Возраст заёмщика от 18 до 75 лет на дату погашения кредита']
+            items: ['Возраст заёмщика от 18 до 75 лет на дату \n' +
+            'погашения кредита;', 'Гражданство — Российская Федерация;', 'Ипотека оформлена 3 или более месяцев назад']
         },
         {
             title: 'Требования к недвижимости',
-            items: ['Оценочная стоимость недвижимости на рынке \n' +
-            'жилья не ниже суммы ипотеки;', 'Недвижимость не должна быть под арестом;', 'Объект недвижимости должен соответсвовать требованиям банков' ]
+            items: ['Квартира в многоквартирном доме: новостройка или готовое жилье;', 'Дом с земельным участком']
         },
     ];
     const insurance = [
@@ -87,7 +88,7 @@ function Secondary(props) {
         {
             label: 'Ипотечные программы', link: '#aboutBlock'
         }, {
-            label: 'Ипотека на вторичное жильё', link: '#aboutBlock'
+            label: 'Рефинансирование ипотеки', link: '#aboutBlock'
         },
 
     ];
@@ -99,20 +100,21 @@ function Secondary(props) {
                 <Header className={styles.otherPage} showButtonContact={false} showSocial={false}
                         navbarItems={navbarItems}/>
                 <Preview className={styles.preview} isIcon={false}
-                         title={(<>Ипотека на вторичное жильё</>)}
-                         textButton="Получить ипотеку"
-                         image="apartement"
-                         width="420px"
+                         title={(<>Рефинансирование
+                             ипотеки</>)}
+                         textButton="Получить ипотеку "
+                         image="management"
+                         width="520px"
 
                 >
-                    Получите ипотеку на вторичное жильё<br/>
-                    без лишних забот
+                    Оптимизируйте ваш ипотечный кредит <br/> на выгодных условиях
                 </Preview>
                 <Scorecard items={secondary} className={styles.scorecard}/>
                 <Zigzag/>
                 <Heading className={`${styles.aboutTitle} ${styles.centered}`} title={sectionHeadings.conditions}/>
                 <CardsList className={styles.cardsList} padding={"24px"} background items={advantsge} icon={(
-                    <svg style={{minWidth: "24px", minHeight: "24px"}} width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg style={{minWidth: "24px", minHeight: "24px"}} width="26" height="26" viewBox="0 0 26 26"
+                         fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M12.4193 15.802L8.72051 12.1031L6.87109 13.9525L12.4193 19.5008L21.6664 10.2537L19.817 8.4043L12.4193 15.802Z"
                             fill="#00071F"/>
@@ -125,16 +127,15 @@ function Secondary(props) {
                             icon={<svg style={{minWidth: "16px", minHeight: "24px"}} width="16" height="24"
                                        viewBox="0 0 16 24"
                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line y1="10.5" x2="16" y2="10.5" stroke="#00071F"/>
-                    </svg>} image="notebook" width='566px' className={styles.conditions}/>
+                                <line y1="10.5" x2="16" y2="10.5" stroke="#00071F"/>
+                            </svg>} image="gaid" width='566px' className={styles.conditions}/>
 
                 <Zigzag/>
-                <Form className={styles.form} title="Бесплатная ипотечная консультация"
-                      subtitle="Заполните форму и получите индивидуальное предложение
-от наших экспертов по ипотеке"/>
+                <Form className={styles.form} title="Ваши двери в новую жизнь начинаются здесь"
+                      subtitle="Готовы узнать, как получить лучшие условия для вашей ипотеки? Заполните форму для консультации и мы перезвоним вам"/>
 
 
-                <Heading className={`${styles.stagesTitle} ${styles.centered}`} title={sectionHeadings.stages} />
+                <Heading className={`${styles.stagesTitle} ${styles.centered}`} title={sectionHeadings.stages}/>
                 <Stages data={cardStage} className={styles.stages}/>
 
 
@@ -167,4 +168,4 @@ function Secondary(props) {
     );
 }
 
-export default Secondary;
+export default Refinancing;

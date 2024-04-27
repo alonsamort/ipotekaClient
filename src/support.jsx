@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './secondary.module.css';
+import styles from './support.module.css';
 import cn from "classnames";
 import Header from "./components/Header";
 import Preview from "./components/Preview";
@@ -20,10 +20,10 @@ import Stages from "./components/Stages";
 import {cards as cardStage} from "./components/Stages/data";
 
 const secondary = [
-    { title: 'от 16,5%', subtitle: 'Ипотечная ставка' },
-    { title: '30 лет', subtitle: 'Срок кредита' },
+    { title: 'от 8%', subtitle: 'Ипотечная ставка' },
+    { title: 'до 30 лет', subtitle: 'Срок кредита' },
     { title: '300 тыс.', subtitle: 'Мин. сумма кредита' },
-    { title: '100 млн', subtitle: 'Макс. сумма кредита' },
+    { title: '6 млн', subtitle: 'Макс. сумма кредита' },
 ];
 const navbarItems = [
     {label: 'Условия'},
@@ -42,18 +42,17 @@ const sectionHeadings = {
 };
 
 
-function Secondary(props) {
+function Support(props) {
 
 
-   const advantsge = [
+    const advantsge = [
         {
-            title: 'Без подтверждения дохода',
-            items: ['Оформление по паспорту', 'Подтверждение доходов не требуется']
+            title: 'Уникальная программа',
+            items: ['Низкие процентные ставки', 'Разные виды недвижимости']
         },
         {
             title: 'На срок от 1 до 30 лет',
-            items: ['Выбирайте срок и платёж, который \n' +
-            'подходит именно вам', 'Досрочные погашения в любой момент']
+            items: ['Срок кредита — от года до 30 лет', 'Первоначальный взнос не менее 30,1%']
         },
     ]
 
@@ -61,12 +60,13 @@ function Secondary(props) {
     const newItems = [
         {
             title: 'Требования к заёмщику',
-            items: ['Гражданство — Российская Федерация;', 'Возраст заёмщика от 18 до 75 лет на дату погашения кредита']
+            items: ['Возраст заёмщика от 18 до 75 лет на дату \n' +
+            'погашения кредита;', 'Гражданство — Российская Федерация;', 'Без ранее выданной ипотеки с 1 января 2023\n' +
+            'и других льготных программ с 23.12.2023']
         },
         {
             title: 'Требования к недвижимости',
-            items: ['Оценочная стоимость недвижимости на рынке \n' +
-            'жилья не ниже суммы ипотеки;', 'Недвижимость не должна быть под арестом;', 'Объект недвижимости должен соответсвовать требованиям банков' ]
+            items: ['Покупка готового или строящегося жилья от застройщика;', 'Застройщик должен быть aккредитован в банке;' ]
         },
     ];
     const insurance = [
@@ -87,7 +87,7 @@ function Secondary(props) {
         {
             label: 'Ипотечные программы', link: '#aboutBlock'
         }, {
-            label: 'Ипотека на вторичное жильё', link: '#aboutBlock'
+            label: 'Ипотека c госсподдержкой', link: '#aboutBlock'
         },
 
     ];
@@ -99,14 +99,14 @@ function Secondary(props) {
                 <Header className={styles.otherPage} showButtonContact={false} showSocial={false}
                         navbarItems={navbarItems}/>
                 <Preview className={styles.preview} isIcon={false}
-                         title={(<>Ипотека на вторичное жильё</>)}
-                         textButton="Получить ипотеку"
-                         image="apartement"
-                         width="420px"
+                         title={(<>Ипотека с Господдержкой <br/> 2020</>)}
+                         textButton="Получить ипотеку "
+                         image="worker"
+                         width="520px"
 
                 >
-                    Получите ипотеку на вторичное жильё<br/>
-                    без лишних забот
+                    С Государственной Поддержкой -
+                    Легче, <br/> Выгоднее, Ближе к Мечте!
                 </Preview>
                 <Scorecard items={secondary} className={styles.scorecard}/>
                 <Zigzag/>
@@ -125,13 +125,12 @@ function Secondary(props) {
                             icon={<svg style={{minWidth: "16px", minHeight: "24px"}} width="16" height="24"
                                        viewBox="0 0 16 24"
                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line y1="10.5" x2="16" y2="10.5" stroke="#00071F"/>
-                    </svg>} image="notebook" width='566px' className={styles.conditions}/>
+                                <line y1="10.5" x2="16" y2="10.5" stroke="#00071F"/>
+                            </svg>} image="done" width='566px' className={styles.conditions}/>
 
                 <Zigzag/>
-                <Form className={styles.form} title="Бесплатная ипотечная консультация"
-                      subtitle="Заполните форму и получите индивидуальное предложение
-от наших экспертов по ипотеке"/>
+                <Form className={styles.form} title="Записаться на услугу или получить консультацию"
+                      subtitle="Завершите первый этап к своему идеальному жилью прямо сейчас! Оставьте заявку, и мы поможем вам осуществить ваши ипотечные планы"/>
 
 
                 <Heading className={`${styles.stagesTitle} ${styles.centered}`} title={sectionHeadings.stages} />
@@ -167,4 +166,4 @@ function Secondary(props) {
     );
 }
 
-export default Secondary;
+export default Support;

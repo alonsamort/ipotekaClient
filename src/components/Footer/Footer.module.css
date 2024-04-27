@@ -1,6 +1,11 @@
 
 
-
+.logo{
+    text-decoration: none;
+}
+.logo a:hover {
+    fill:#33394C ;
+}
 .contentGrid {
 
 display: grid;
@@ -39,12 +44,18 @@ margin-bottom: 6px;
 }
 
 .socialIcons {
-    margin-top: 1.5rem;
+    display: flex;
+
+    gap: 16px;
+    padding-top: 32px;
+
 }
 
-.iconLink {
-    margin-right: 1rem;
+.socialIcons a:hover {
+    fill: #33394C;
 }
+
+
 
 .sectionTitle {
 
@@ -73,6 +84,10 @@ margin-bottom: 6px;
 
     margin: 0.4rem 0;
 }
+.item:hover{
+    color: #8C8F9A;
+}
+
 .section{
     max-width: 130px;
 gap: 80px;
