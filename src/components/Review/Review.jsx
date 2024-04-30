@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Review.module.css';
 import cn from "classnames";
-import UserInfo from "./ReviewCard /UserInfo";
+import UserInfo from "./UserInfo";
 
 
 function Review(props) {
