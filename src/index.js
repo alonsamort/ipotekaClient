@@ -15,7 +15,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <RootContext.Provider value={[1]}>
-      <Commerce />
+      <Home />
     </RootContext.Provider>
   </React.StrictMode>,
 );

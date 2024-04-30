@@ -97,7 +97,7 @@ function Home() {
         <Preview className={styles.preview} title={(<>Ипотека здесь: <br/>
           Дом мечты-<br/>
           Это реально</>)}
-                 textButton="Получить ипотеку"
+                 textButton="Получить консультацию"
                  image="Cards"
                  width="566px" isIcon={true}>
           Откройте двери своего нового дома <br/>

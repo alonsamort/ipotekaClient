@@ -27,7 +27,7 @@ function Programs(props) {
                 <ProgramCard color="yellow" imageUrl="/bear.png" title="Семейная ипотека" rate="от 5%" />
                 <ProgramCard color="green" imageUrl="/apartament.png" title="Вторичное жильё" rate="от 16,5%" />
                 <ProgramCard color="red" imageUrl="/government.png" title="Господдержка" rate="от 8%" />
-                <ProgramCard color="blue" imageUrl="/notebook.png" title="Рефинансирование" rate="от 16%" />
+                <ProgramCard color="blue" imageUrl="/note.png" title="Рефинансирование" rate="от 16%" />
 
                 {isExpanded && (
                     <>
