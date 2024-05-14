@@ -194,7 +194,7 @@ function Home(props) {
                             title="Заявка на бесплатную консультацию"
                             subtitle="Не откладывайте решение вопросов на потом.
 Заполните форму ниже, и наши специалисты вам перезвонят!"
-                            className2={styles.consultationForm} className={styles.consultation} showCloseButton={true}>
+                            className2={styles.consultationForm} className={styles.consultation} showCloseButton={false}>
 
                         </Form>
 
