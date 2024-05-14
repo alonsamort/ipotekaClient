@@ -82,9 +82,9 @@ const sectionHeadings = {
     contacts: "Контакты"
 };
 const navbarItems = [
-    {label: 'О нас'},
-    {label: 'Услуги'},
-    {label: 'Отзывы'},
+    {label: 'О нас', sectionId: 'about'},
+    {label: 'Услуги', sectionId: 'service'},
+    {label: 'Отзывы', sectionId: 'service'},
     {label: 'Контакты'},
 
 ];
@@ -129,6 +129,11 @@ function Home(props) {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+    const handleMenuClick = (sectionId) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({behavior: 'smooth'});
+        }};
     return (
         <AnimatePresence>
             <motion.div
@@ -141,7 +146,7 @@ function Home(props) {
                 <>
                     <div className="container">
                         <Header className={styles.header} showButtonContact={true} showSocial={true}
-                                navbarItems={navbarItems}/>
+                                navbarItems={navbarItems}  onMenuClick={handleMenuClick}/>
 
 
                         <Preview className={styles.preview} title={(<>Ипотека здесь: <br/>
