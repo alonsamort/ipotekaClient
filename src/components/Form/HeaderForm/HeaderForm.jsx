@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './Header.module.css';
+import styles from './HeaderForm.module.css';
 import cn from "classnames";
-function Header(props) {
+function HeaderForm(props) {
     return (
         <>
             <div className={cn(styles.wrap, props.className)}>
@@ -14,4 +14,4 @@ function Header(props) {
 );
 }
 
-export default Header;
+export default HeaderForm;

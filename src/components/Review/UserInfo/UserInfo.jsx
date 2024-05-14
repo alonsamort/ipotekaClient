@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './UserInfo.module.css';
 import cn from "classnames";
 
 function UserInfo(props) {
+    const [showFullComment, setShowFullComment] = useState(false);
+    const toggleComment = () => {
+        setShowFullComment(!showFullComment);
+    };
     return (
         <>
             <div className={cn(styles.wrap, props.className)}>
@@ -34,16 +38,32 @@ function UserInfo(props) {
                 </div>
 
 
-                <p className={styles.comment}>{props.review.comment}</p>
-                <div className={styles.more}>
-                    <p className={styles.textMore}>читать больше</p>
-                    <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M5.25695 5.81836L4.19629 6.87902L9.49958 12.1823L14.8029 6.87904L13.7422 5.81838L9.49959 10.061L5.25695 5.81836Z"
-                            fill="#8C8F9A"/>
-                    </svg>
+                <p className={styles.comment}>
+                    {showFullComment ? props.review.comment : `${props.review.comment.slice(0, 120)}${!showFullComment && props.review.comment.length > 120 ? '...' : ''}`}
+                    {!showFullComment && props.review.comment.length > 120 && (
+                        <div className={styles.more}>
+                            <p className={styles.textMore} onClick={toggleComment}>читать больше</p>
+                            <svg onClick={toggleComment} width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.25695 5.81836L4.19629 6.87902L9.49958 12.1823L14.8029 6.87904L13.7422 5.81838L9.49959 10.061L5.25695 5.81836Z"
+                                    fill="#8C8F9A"/>
+                            </svg>
+                        </div>
+                    )}
+                    {showFullComment && (
+                        <div className={styles.more}>
+                            <p className={styles.textMore} onClick={toggleComment}>свернуть</p>
+                            <svg onClick={toggleComment} width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.25695 5.81836L4.19629 6.87902L9.49958 12.1823L14.8029 6.87904L13.7422 5.81838L9.49959 10.061L5.25695 5.81836Z"
+                                    fill="#8C8F9A"/>
+                            </svg>
+                        </div>
+                    )}
 
-                </div>
+                </p>
             </div>
 
 

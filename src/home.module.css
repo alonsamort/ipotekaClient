@@ -41,17 +41,26 @@
 .stages{
   margin-top: 92px;
 }
+.review{
+  margin-bottom: 125px;
+}
 .form{
   margin-top: 92px;
   margin-bottom: 92px;
 }
 .contactsTitle{
-  margin: 92px;
+  margin-bottom: 92px;
 }
 .contacts{
+  margin-bottom: 92px;
 
 }
 .footer{
   margin-bottom: 92px;
   margin-top: 125px;
+}
+
+.consultation{
+  margin:92px auto;
+
 }

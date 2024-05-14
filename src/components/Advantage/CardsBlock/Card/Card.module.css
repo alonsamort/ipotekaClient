@@ -8,6 +8,7 @@
     max-width: 580px;
     align-items: center;
 
+
 }
 
 .content {
@@ -57,4 +58,26 @@
 
 padding-top: 20px;
     cursor: pointer;
+}
+.hideText{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.additionalTitle{
+padding-bottom: 6px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.014em;
+
+
+
+}
+.additionalText{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+
+
 }

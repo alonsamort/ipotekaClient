@@ -4,14 +4,14 @@
     border-radius: 24px;
     padding: 48px;
     display: flex;
-    flex-direction: row;
+
 justify-content: space-between;
 }
 .header{
     max-width: 530px;
 
 }
-.form{
+.content{
     display: grid;
     grid-template-rows: 1fr auto;
    width: 420px;
@@ -123,4 +123,15 @@ height: 16px;
 }
 .personalInfo>a{
     color: #0057FF;
+}
+.closeButton{
+    position: absolute;
+    z-index: 5;
+    top: 20px;
+    right: 20px;
+    border: none;
+   background: none;
+    cursor: pointer;
+
+
 }

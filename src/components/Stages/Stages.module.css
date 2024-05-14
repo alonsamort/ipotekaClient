@@ -1,7 +1,5 @@
-.wrap {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
-    gap:24px;
 
 
+.carousel-container {
+    width: 1440px;
 }

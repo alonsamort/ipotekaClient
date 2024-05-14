@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import styles from './commerce.module.css';
 import cn from "classnames";
 import Header from "./components/Header";
@@ -18,6 +18,7 @@ import breadcrumbs from "./components/Breadcrumbs";
 import Footer from "./components/Footer";
 import Stages from "./components/Stages";
 import {cards as cardStage} from "./components/Stages/data";
+import { motion, AnimatePresence } from 'framer-motion';
 
 const secondary = [
     {title: 'от 30,1%', subtitle: 'Ипотечная ставка'},
@@ -43,7 +44,9 @@ const sectionHeadings = {
 
 
 function Commerce(props) {
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const advantsge = [
         {
@@ -93,6 +96,14 @@ function Commerce(props) {
     ];
 
     return (
+        <AnimatePresence>
+            <motion.div
+                initial={{ opacity: 0, y: 20 }} // Начальные стили
+                animate={{ opacity: 1, y: 0 }} // Анимация при появлении
+                exit={{ opacity: 0, y: -20 }} // Анимация при исчезновении
+                transition={{ duration: 0.3 }} // Время анимации
+                className={cn(styles.container, props.className)}
+            >
         <>
             <div className={cn(styles.container, props.className)}>
 
@@ -164,7 +175,8 @@ function Commerce(props) {
                 <Footer className={styles.footer} hideContentGrid={true}/>
             </div>
         </>
-
+            </motion.div>
+        </AnimatePresence>
     );
 }
 

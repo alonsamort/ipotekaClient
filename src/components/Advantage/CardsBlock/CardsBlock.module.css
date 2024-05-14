@@ -4,6 +4,6 @@ display: grid;
     grid-template-columns: repeat(2, 1fr);
 
 max-width: 1190px;
-
+    align-items: flex-start;
 gap: 32px;
 }

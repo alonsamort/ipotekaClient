@@ -9,7 +9,11 @@ function Review(props) {
     return (
         <>
             <div className={cn(styles.wrap, props.className)}>
-                {props.data.map(card => <UserInfo key={card.id} {...card} />)}
+
+                {props.data.map(card => (
+                    <UserInfo key={card.id} heading={card.heading} review={card.review} />
+                ))}
+
                
             </div>
         </>

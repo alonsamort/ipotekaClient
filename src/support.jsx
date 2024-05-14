@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useEffect} from "react";
+import { motion, AnimatePresence } from 'framer-motion';
 import styles from './support.module.css';
 import cn from "classnames";
 import Header from "./components/Header";
@@ -43,7 +44,9 @@ const sectionHeadings = {
 
 
 function Support(props) {
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const advantsge = [
         {
@@ -93,6 +96,14 @@ function Support(props) {
     ];
 
     return (
+        <AnimatePresence>
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.3 }}
+                className={cn(styles.container, props.className)}
+            >
         <>
             <div className={cn(styles.container, props.className)}>
 
@@ -162,7 +173,8 @@ function Support(props) {
                 <Footer className={styles.footer} hideContentGrid={true}/>
             </div>
         </>
-
+            </motion.div>
+        </AnimatePresence>
     );
 }
 

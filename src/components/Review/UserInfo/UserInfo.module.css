@@ -1,17 +1,16 @@
 .wrap {
-   padding: 24px;
-margin-top: 92px;
+    padding: 24px;
+    margin-top: 92px;
     background: #FFFFFF;
-width: 356px;
+ width: 356px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
-    border-radius: 12px;
-
+    border-radius: 24px;
     display: grid;
 
-    align-items: center;
     grid-row-gap: 12px;
     grid-template-columns: auto 1fr; /* Один столбец для аватара, второй для контента */
-    grid-template-rows: auto auto auto;
+    grid-auto-rows: min-content; /* Изменено */
+
 
 
 }
@@ -61,10 +60,12 @@ height: 12px;
 }
 
 .more{
+    cursor: pointer;
+    padding-top: 20px;
     grid-column: 1 / -1;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
 
 
 
