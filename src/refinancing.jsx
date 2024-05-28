@@ -27,10 +27,10 @@ const secondary = [
     {title: '30 млн', subtitle: 'Макс. сумма кредита'},
 ];
 const navbarItems = [
-    {label: 'Условия'},
-    {label: 'Как получить ипотеку'},
-    {label: 'Отзывы'},
-    {label: 'Контакты'},
+    { label: 'Условия',sectionId: 'conditions' },
+    { label: 'Как получить ипотеку', sectionId: 'stages' },
+    { label: 'Отзывы', sectionId: 'review' },
+    { label: 'Контакты', sectionId: 'contacts' },
 
 ];
 
@@ -86,12 +86,10 @@ function Refinancing(props) {
     ];
     const breadcrumb = [
         {
-            label: 'Главная', link: '#aboutBlock'
+            label: 'Главная',  path: '/'
         },
         {
-            label: 'Ипотечные программы', link: '#aboutBlock'
-        }, {
-            label: 'Рефинансирование ипотеки', link: '#aboutBlock'
+            label: 'Рефинансирование ипотеки', 
         },
 
     ];

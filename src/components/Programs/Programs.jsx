@@ -16,7 +16,7 @@ function Programs(props) {
 
     return (
 
-        <div className={cn(styles.wrap, props.className)}>
+        <div id="programs" className={cn(styles.wrap, props.className)}>
             <div className={styles.text}>
                 <h2 className={styles.title}>Ипотечные программы</h2>
 

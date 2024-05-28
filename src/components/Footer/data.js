@@ -6,11 +6,11 @@ export const footer = {
         {
             title: 'Компания',
             items: [
-                {label: 'О нас', url: '#!'},
-                {label: 'Команда', url: '#!'},
-                {label: 'Ипотека', url: '#!'},
-                {label: 'Услуги', url: '#!'},
-                {label: 'Отзывы', url: '#!'},
+                {label: 'О нас', footerId:'about'},
+                {label: 'Команда', footerId:"comand"},
+                {label: 'Ипотека', footerId:"programs"},
+                {label: 'Услуги', footerId:'service'},
+                {label: 'Отзывы', footerId:'review'},
             ],
         },
         {

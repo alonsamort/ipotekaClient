@@ -1,8 +1,13 @@
-.wrap {
+.comand {
   display: flex;
   margin-top: 80px;
   justify-content: space-between;
 
      margin-bottom: 92px;
+
+}
+.comandTitle {
+
+  margin-top: 92px;
 
 }

@@ -1,6 +1,10 @@
-.wrap {
+.serviceCard {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap:24px;
 
+}
+.serviceTitle{
+    margin-top: 185px;
+    margin-bottom: 110px;
 }

@@ -50,7 +50,7 @@ function Footer(props) {
                             <div className={styles.section}>
                                 <p className={styles.sectionTitle}>{section.title}</p>
                                 {section.items.map((item, index) => (
-                                    <a key={index} href={item.url} className={styles.item}>
+                                    <a key={index} href={`#${item.footerId}`} className={styles.item}>
                                         {item.label}
                                     </a>
                                 ))}

@@ -27,10 +27,10 @@ const secondary = [
     { title: '6 млн', subtitle: 'Макс. сумма кредита' },
 ];
 const navbarItems = [
-    {label: 'Условия'},
-    {label: 'Как получить ипотеку'},
-    {label: 'Отзывы'},
-    {label: 'Контакты'},
+    { label: 'Условия',sectionId: 'conditions' },
+    { label: 'Как получить ипотеку', sectionId: 'stages' },
+    { label: 'Отзывы', sectionId: 'review' },
+    { label: 'Контакты', sectionId: 'contacts' },
 
 ];
 
@@ -85,12 +85,10 @@ function Support(props) {
     ];
     const breadcrumb = [
         {
-            label: 'Главная', link: '#aboutBlock'
+            label: 'Главная',  path: '/'
         },
-        {
-            label: 'Ипотечные программы', link: '#aboutBlock'
-        }, {
-            label: 'Ипотека c госсподдержкой', link: '#aboutBlock'
+         {
+            label: 'Ипотека c госсподдержкой',
         },
 
     ];
@@ -104,75 +102,80 @@ function Support(props) {
                 transition={{ duration: 0.3 }}
                 className={cn(styles.container, props.className)}
             >
-        <>
-            <div className={cn(styles.container, props.className)}>
+                <>
+                    <div className="container">
 
-                <Header className={styles.otherPage} showButtonContact={false} showSocial={false}
-                        navbarItems={navbarItems}/>
-                <Preview className={styles.preview} isIcon={false}
-                         title={(<>Ипотека с Господдержкой <br/> 2020</>)}
-                         textButton="Получить ипотеку "
-                         image="worker"
-                         width="520px"
+                        <Header className={styles.otherPage} showButtonContact={false} showSocial={false}
+                                navbarItems={navbarItems}/>
+                        <Preview className={styles.preview} isIcon={false}
+                                 title={(<>Ипотека с Господдержкой <br/> 2020</>)}
+                                 textButton="Получить ипотеку "
+                                 image="worker"
+                                 width="520px"
 
-                >
-                    С Государственной Поддержкой -
-                    Легче, <br/> Выгоднее, Ближе к Мечте!
-                </Preview>
-                <Scorecard items={secondary} className={styles.scorecard}/>
-                <Zigzag/>
-                <Heading className={`${styles.aboutTitle} ${styles.centered}`} title={sectionHeadings.conditions}/>
-                <CardsList className={styles.cardsList} padding={"24px"} background items={advantsge} icon={(
-                    <svg style={{minWidth: "24px", minHeight: "24px"}} width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M12.4193 15.802L8.72051 12.1031L6.87109 13.9525L12.4193 19.5008L21.6664 10.2537L19.817 8.4043L12.4193 15.802Z"
-                            fill="#00071F"/>
-                    </svg>
+                        >
+                            С Государственной Поддержкой -
+                            Легче, <br/> Выгоднее, Ближе к Мечте!
+                        </Preview>
+                        <Scorecard items={secondary} className={styles.scorecard}/>
+                        <Zigzag/>
+                        <Heading className={`${styles.aboutTitle} ${styles.centered}`}
+                                 title={sectionHeadings.conditions}/>
+                        <CardsList className={styles.cardsList} padding={"24px"} background items={advantsge} icon={(
+                            <svg style={{minWidth: "24px", minHeight: "24px"}} width="26" height="26"
+                                 viewBox="0 0 26 26"
+                                 fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.4193 15.802L8.72051 12.1031L6.87109 13.9525L12.4193 19.5008L21.6664 10.2537L19.817 8.4043L12.4193 15.802Z"
+                                    fill="#00071F"/>
+                            </svg>
 
 
-                )}/>
+                        )}/>
 
-                <Conditions className={styles.conditions} items={newItems}
-                            icon={<svg style={{minWidth: "16px", minHeight: "24px"}} width="16" height="24"
-                                       viewBox="0 0 16 24"
-                                       fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <Conditions className={styles.conditions} items={newItems}
+                                    icon={<svg style={{minWidth: "16px", minHeight: "24px"}} width="16" height="24"
+                                               viewBox="0 0 16 24"
+                                               fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line y1="10.5" x2="16" y2="10.5" stroke="#00071F"/>
+                                    </svg>} image="done" width='566px' className={styles.conditions}/>
+
+                        <Zigzag/>
+                        <Form className={styles.form} title="Записаться на услугу или получить консультацию"
+                              subtitle="Завершите первый этап к своему идеальному жилью прямо сейчас! Оставьте заявку, и мы поможем вам осуществить ваши ипотечные планы"/>
+
+
+                        <Heading className={`${styles.stagesTitle} ${styles.centered}`} title={sectionHeadings.stages}/>
+                    </div>
+                    <Stages data={cardStage} className={styles.stages}/>
+
+                    <div className="container">
+                        <Conditions className={styles.insurence} image="insurence" width='446px' items={insurance}
+                                    flexDirection={"row-reverse"} button={true} icon={(
+                            <svg style={{minWidth: "16px", minHeight: "24px"}} width="16" height="24"
+                                 viewBox="0 0 16 24"
+                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <line y1="10.5" x2="16" y2="10.5" stroke="#00071F"/>
-                            </svg>} image="done" width='566px' className={styles.conditions}/>
-
-                <Zigzag/>
-                <Form className={styles.form} title="Записаться на услугу или получить консультацию"
-                      subtitle="Завершите первый этап к своему идеальному жилью прямо сейчас! Оставьте заявку, и мы поможем вам осуществить ваши ипотечные планы"/>
+                            </svg>
 
 
-                <Heading className={`${styles.stagesTitle} ${styles.centered}`} title={sectionHeadings.stages} />
-                <Stages data={cardStage} className={styles.stages}/>
+                        )}/>
 
-
-                <Conditions className={styles.insurence} image="insurence" width='446px' items={insurance}
-                            flexDirection={"row-reverse"} button={true} icon={(
-                    <svg style={{minWidth: "16px", minHeight: "24px"}} width="16" height="24" viewBox="0 0 16 24"
-                         fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line y1="10.5" x2="16" y2="10.5" stroke="#00071F"/>
-                    </svg>
-
-
-                )}/>
-                <Heading className={`${styles.reviewTitle} ${styles.centered}`} title={sectionHeadings.review}/>
-                <Review data={card}/>
-                <Heading className={`${styles.contactsTitle} ${styles.centered}`} title={sectionHeadings.contacts}/>
-                <Contacts data={info} className={styles.contacts}/>
-                <Breadcrumbs className={styles.breadcrumbs} items={breadcrumb}
-                             icon={<svg className={styles.svg} style={{minWidth: "18px", minHeight: "18px"}} width="24"
-                                        height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                 <path
-                                     d="M7.75694 6.34292L9.17115 4.92871L16.2422 11.9998L9.17112 19.0708L7.75691 17.6566L13.4138 11.9998L7.75694 6.34292Z"
-                                     fill="#666A79"/>
-                             </svg>
-                             }/>
-                <Footer className={styles.footer} hideContentGrid={true}/>
-            </div>
-        </>
+                        <Review className={styles.review} data={card}/>
+                        <Contacts data={info} className={styles.contacts}/>
+                        <Breadcrumbs className={styles.breadcrumbs} items={breadcrumb}
+                                     icon={<svg className={styles.svg} style={{minWidth: "18px", minHeight: "18px"}}
+                                                width="24"
+                                                height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                         <path
+                                             d="M7.75694 6.34292L9.17115 4.92871L16.2422 11.9998L9.17112 19.0708L7.75691 17.6566L13.4138 11.9998L7.75694 6.34292Z"
+                                             fill="#666A79"/>
+                                     </svg>
+                                     }/>
+                        <Footer className={styles.footer} hideContentGrid={true}/>
+                    </div>
+                </>
             </motion.div>
         </AnimatePresence>
     );

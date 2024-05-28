@@ -27,10 +27,10 @@ const secondary = [
     {title: '100 млн', subtitle: 'Макс. сумма кредита'},
 ];
 const navbarItems = [
-    {label: 'Условия'},
-    {label: 'Как получить ипотеку'},
-    {label: 'Отзывы'},
-    {label: 'Контакты'},
+    { label: 'Условия',sectionId: 'conditions' },
+    { label: 'Как получить ипотеку', sectionId: 'stages' },
+    { label: 'Отзывы', sectionId: 'review' },
+    { label: 'Контакты', sectionId: 'contacts' },
 
 ];
 

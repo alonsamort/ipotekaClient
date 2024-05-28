@@ -8,7 +8,7 @@ import Statistic from "./components/Statistic";
 
 import AboutCompany from "./components/AboutCompany";
 import Heading from "./components/Heading";
-import React, {useEffect} from "react";
+import React, {useEffect,useRef} from "react";
 import Command from "./components/Command";
 import Programs from "./components/Programs";
 import Faq from "./components/FAQ";
@@ -18,7 +18,7 @@ import Stages from "./components/Stages";
 import {cards as cardStage} from "./components/Stages/data"
 import Form from "./components/Form";
 import Review from "./components/Review";
-import {card} from "./components/Review/data"
+
 import Contacts from "./components/Contacts";
 import {info} from "./components/Contacts/data"
 import Footer from "./components/Footer";
@@ -73,10 +73,8 @@ const FAQHomeData = [
 ];
 const sectionHeadings = {
     advantage: "Почему обращаются к нам",
-    about: "О нашей компании",
     team: "Наша команда",
     faq: "Часто задаваемые вопросы",
-    services: "Услуги",
     stages: "Этапы оформления ипотеки ",
     review: "Отзывы наших клиентов",
     contacts: "Контакты"
@@ -84,8 +82,8 @@ const sectionHeadings = {
 const navbarItems = [
     {label: 'О нас', sectionId: 'about'},
     {label: 'Услуги', sectionId: 'service'},
-    {label: 'Отзывы', sectionId: 'service'},
-    {label: 'Контакты'},
+    {label: 'Отзывы', sectionId: 'review'},
+    {label: 'Контакты', sectionId: 'contacts'},
 
 ];
 
@@ -121,34 +119,42 @@ const reviews = [
         review: {
             comment: "Профессиональные и отзывчивые ипотечные брокеры! Они помогли мне с выбором ипотечной программы, нашли выгодные условия и провели через весь процесс без проблем. Очень доволен результатом! Рекомендую!"
         }
+    },
+    {
+        id: 4,
+        heading: {
+            avatar: "/women.png",
+            FLName: "Анна Петрова",
+        },
+        review: {
+            comment: "Профессиональные и отзывчивые ипотечные брокеры! Они помогли мне с выбором ипотечной программы, нашли выгодные условия и провели через весь процесс без проблем. Очень доволен результатом! Рекомендую!"
+        }
     }
 
 ];
 
 function Home(props) {
+
+
+
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-    const handleMenuClick = (sectionId) => {
-        const section = document.getElementById(sectionId);
-        if (section) {
-            section.scrollIntoView({behavior: 'smooth'});
-        }};
+
     return (
         <AnimatePresence>
             <motion.div
-                initial={{opacity: 0, y: 20}} // Начальные стили
-                animate={{opacity: 1, y: 0}} // Анимация при появлении
-                exit={{opacity: 0, y: -20}} // Анимация при исчезновении
-                transition={{duration: 0.3}} // Время анимации
+                initial={{opacity: 0, y: 20}}
+                animate={{opacity: 1, y: 0}}
+                exit={{opacity: 0, y: -20}}
+                transition={{duration: 0.3}}
                 className={cn(styles.container, props.className)}
             >
                 <>
                     <div className="container">
                         <Header className={styles.header} showButtonContact={true} showSocial={true}
-                                navbarItems={navbarItems}  onMenuClick={handleMenuClick}/>
-
-
+                                navbarItems={navbarItems} />
                         <Preview className={styles.preview} title={(<>Ипотека здесь: <br/>
                             Дом мечты-<br/>
                             Это реально</>)}
@@ -166,28 +172,22 @@ function Home(props) {
                         <Zigzag/>
                         <Statistic/>
                         <Zigzag/>
-                        <Heading className={`${styles.aboutTitle} ${styles.centered}`} title={sectionHeadings.about}/>
-                        <AboutCompany/>
+                        <AboutCompany></AboutCompany>
                         <Zigzag/>
-                        <Heading className={`${styles.comandTitle} ${styles.centered}`} title={sectionHeadings.team}/>
                         <Command/>
                         <Zigzag/>
                         <Heading className={`${styles.faqTitle} ${styles.centered}`} title={sectionHeadings.faq}/>
                         <Faq data={FAQHomeData} className={styles.faq}/>
-                        <Programs/>
-                        <Heading className={`${styles.serviceTitle} ${styles.centered}`}
-                                 title={sectionHeadings.services}/>
+                        <Programs />
                         <Service data={cards} className={styles.service}/>
                         <Zigzag/>
-                        <Heading className={`${styles.stagesTitle} ${styles.centered}`} title={sectionHeadings.stages}/>
-                        <Stages data={cardStage} className={styles.stages}/>
+                        <Heading className={`${styles.stagesTitle} ${styles.centered}`} title={sectionHeadings.stages}/></div>
+                    <Stages data={cardStage} className={styles.stages}/>
+                    <div className="container">
                         <Form className={styles.form} title="Плохая кредитная история, отказали несколько банков,
 или нет первого взноса?"
                               subtitle="Не беспокойтесь! Наши специалисты успешно решают сложные ситуации с ипотекой в любом регионе России. Работаем до положительного решения банка. Заполните форму, и вам окажут помощь в решении всех вопросов!"/>
-                        <Heading className={`${styles.reviewTitle} ${styles.centered}`} title={sectionHeadings.review}/>
                         <Review className={styles.review} data={reviews}/>
-                        <Heading className={`${styles.contactsTitle} ${styles.centered}`}
-                                 title={sectionHeadings.contacts}/>
                         <Contacts data={info} className={styles.contacts}/>
                         <Zigzag/>
                         <Form
@@ -195,9 +195,7 @@ function Home(props) {
                             subtitle="Не откладывайте решение вопросов на потом.
 Заполните форму ниже, и наши специалисты вам перезвонят!"
                             className2={styles.consultationForm} className={styles.consultation} showCloseButton={false}>
-
                         </Form>
-
                         <Footer data={footer} className={styles.footer}/>
                     </div>
                 </>

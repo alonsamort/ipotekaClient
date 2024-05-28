@@ -2,17 +2,20 @@ import React from 'react';
 import styles from './Review.module.css';
 import cn from "classnames";
 import UserInfo from "./UserInfo";
+import Heading from "../Heading";
 
 
 function Review(props) {
 
     return (
         <>
-            <div className={cn(styles.wrap, props.className)}>
+            <div  id="review" className={cn(styles.wrap, props.className)}>
 
-                {props.data.map(card => (
-                    <UserInfo key={card.id} heading={card.heading} review={card.review} />
-                ))}
+                <Heading className={`${styles.reviewTitle} ${styles.centered}`} title="Отзывы наших клиентов"/>
+<div className={styles.reviews}>{props.data.map(card => (
+    <UserInfo key={card.id} heading={card.heading} review={card.review} />
+))}</div>
+
 
                
             </div>

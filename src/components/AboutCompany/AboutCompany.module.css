@@ -1,4 +1,4 @@
-.wrap {
+.company {
 display: grid;
 gap: 20px;
 grid-template-columns: repeat(2, 1fr);
@@ -12,7 +12,9 @@ max-width: 545px;
 
 
 }
-
+.aboutTitle {
+    margin-top: 92px;
+}
 
 .doubleTitle {
     margin-top: 80px;

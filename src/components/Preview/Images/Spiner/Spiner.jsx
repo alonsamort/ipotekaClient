@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from './Spiner.module.css';
 import cn from "classnames";
+
 function Spiner(props) {
     return (
         <>
-            <div className={cn(styles.wrap, props.className)}>
+            <a href="#about" className={cn(styles.wrap, props.className)}>
                 <svg className={styles.spiner} width="133" height="134" viewBox="0 0 133 134" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_d_1593_3729)">
@@ -108,7 +109,7 @@ function Spiner(props) {
                       d="M55.8818 57.8335L77.1457 55.7689L79.2089 77.0193L75.4784 77.3815L73.9744 62.5371L59.3774 80.2619L56.5126 77.9058L71.1097 60.181L56.2438 61.5616L55.8818 57.8335Z"
                       fill="#3379FF"/></svg>
 
-            </div>
+            </a>
         </>
 
     );

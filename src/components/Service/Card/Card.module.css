@@ -27,6 +27,7 @@ max-width: 375px;
     border-radius: 10px 10px 0px 0px;
 }
 .button{
+    cursor: pointer;
     align-items: center;
     align-self: end;
     padding: 16px;
@@ -47,10 +48,29 @@ max-width: 375px;
     color: #FFFFFF;
 
 }
+
+.button:hover{
+    color: #F7F8F8;
+    background: linear-gradient(88.67deg, #3379FF 5.1%, #33CEFF 96.41%);
+}
 .price{
     padding: 20px 0px 20px 0px;
     border-bottom: 1px solid #D4D5D9;
 }
 .advantage{
 padding:20px 0px 20px 0px ;
+}
+.headingForm{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.form{
+    flex-direction: column;
+    align-items: center;
+    max-width: 420px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
 }

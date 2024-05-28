@@ -1,10 +1,10 @@
 
-.container {
-    max-width: 1190px;
-    margin: 0 auto;
-    align-items: center;
-    min-height: 78px;
-}
+/*.container {*/
+/*    max-width: 1190px;*/
+/*    margin: 0 auto;*/
+/*    align-items: center;*/
+/*    min-height: 78px;*/
+/*}*/
 .otherPage{
     display: flex;
 }
@@ -55,8 +55,8 @@
     border-radius: 24px;
 
 }
-.contacts{
-    margin-top: 92px;
+.review{
+    margin-bottom: 180px;
 }
 .svg{
     align-self: center;

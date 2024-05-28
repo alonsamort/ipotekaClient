@@ -9,6 +9,7 @@ import cn from "classnames";
 import Form from "../Form/Form"
 
 
+
 function Header({showButtonContact, showSocial, navbarItems, className}) {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -27,7 +28,7 @@ function Header({showButtonContact, showSocial, navbarItems, className}) {
              style={{gridTemplateAreas: !showSocial && !showButtonContact && " logo navbar "}}>
 
             <Logo className={styles.logo}></Logo>
-            <Navbar items={navbarItems} className={styles.navbar}></Navbar>
+            <Navbar  items={navbarItems} className={styles.navbar}></Navbar>
             {showSocial && <Social className={styles.social}></Social>}
             {showButtonContact &&
                 <ButtonContact onClick={openModal} className={styles.buttonCall}>Связаться с нами</ButtonContact>}

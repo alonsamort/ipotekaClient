@@ -27,16 +27,25 @@ const navigation={
 
     return (
         <>
-            <div className={cn(styles.wrap, props.className)}>
+            <div id="stages" className={cn(styles.wrap, props.className)}>
                 <Swiper
-                    style={{overflow: "visible", paddingBottom: "60px"}}
+                    style={{paddingLeft:"19%",  paddingBottom: "60px"}}
                     modules={[Navigation, Pagination, A11y]}
-                    spaceBetween={150}
+                    spaceBetween={-280}
                     slidesPerView={3}
+
                     navigation={
                         navigation
                     }
                     pagination
+                    breakpoints={{
+
+                        1440: {
+                            slidesPerView: 2,
+                            spaceBetween: -300,
+                        },
+
+                    }}
                     onSwiper={(swiper) => {
                         setIsBeginning(swiper.isBeginning);
                         setIsEnd(swiper.isEnd);
@@ -57,7 +66,7 @@ const navigation={
                         gap:"347px",
                         alignItems: "center",
                         top: "42%",
-                        left:"-22px",
+                        left:"18%",
                         justifyContent: "space-between",
                         position: "absolute",
                         zIndex: 1

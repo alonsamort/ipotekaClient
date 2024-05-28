@@ -8,9 +8,11 @@ function Button(props) {
         <>
 
             <motion.button className={cn(styles.wrap, props.className)}
-                           whileHover={!props.disableAnimation ? { scale: 1.1 } : null} // Анимация при наведении
-                           transition={!props.disableAnimation ? { type: 'spring', stiffness: 400, damping: 10 } : {}} // Параметры анимации
+                           whileHover={!props.disableAnimation ? { scale: 1.1 } : null}
+                          transition={!props.disableAnimation ? { type: 'spring', stiffness: 400, damping: 10 } : {}}
+                           onClick={props.onClick}
             >
+
                 {props.children}
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="white"
                      xmlns="http://www.w3.org/2000/svg">

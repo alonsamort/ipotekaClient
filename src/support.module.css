@@ -1,9 +1,6 @@
 
-.container {
-    max-width: 1190px;
-    margin: 0 auto;
-    align-items: center;
-    min-height: 78px;
+.review{
+    margin-bottom: 180px;
 }
 .otherPage{
     display: flex;

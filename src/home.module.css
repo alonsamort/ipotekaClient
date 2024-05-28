@@ -24,11 +24,7 @@
   margin-top: 116px;
   margin-bottom: 92px;
 }
-.serviceTitle{
-  margin-top: 185px;
-  display: flex;
-  justify-content: center;
-}
+
 .advantageTitle{
   margin-top: 92px;}
 .faqTitle{
@@ -42,15 +38,13 @@
   margin-top: 92px;
 }
 .review{
-  margin-bottom: 125px;
+  margin-bottom: 180px;
 }
 .form{
   margin-top: 92px;
   margin-bottom: 92px;
 }
-.contactsTitle{
-  margin-bottom: 92px;
-}
+
 .contacts{
   margin-bottom: 92px;
 
