@@ -1,15 +1,19 @@
 import React from 'react';
 import styles from './Info.module.css';
 import cn from "classnames";
+
 function Info(props) {
+    const { contacts, className } = props;
+
     return (
         <>
-            <div className={cn(styles.wrap, props.className)}>
-                <a className={styles.link} href="#" ><p className={styles.title}>{props.contacts.title}</p></a>
-                <span className={styles.subTitle}>{props.contacts.subtitle}</span>
+            <div className={cn(styles.wrap, className)}>
+                <a className={styles.link} href={contacts.url}>
+                    <p className={styles.title}>{contacts.item}</p>
+                </a>
+                <span className={styles.subTitle}>{contacts.subtitle}</span>
             </div>
         </>
-
     );
 }
 
