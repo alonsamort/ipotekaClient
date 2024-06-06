@@ -3,7 +3,7 @@ export const info=[{
 
     contacts: {
 
-        title: '8 (867) 671-91-76',
+        title: '8 (988) 348-77-55',
         subtitle: 'Ипотечный брокер Анна',
     }
 }, {
@@ -11,7 +11,7 @@ export const info=[{
 
     contacts: {
 
-        title: '8 (867) 671-91-76',
+        title: '8 (988) 132-34-96',
         subtitle: 'Ипотечный брокер Марина',
     },
 }, {

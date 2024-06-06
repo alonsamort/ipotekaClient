@@ -1,8 +1,8 @@
 
-
 .logo{
-    text-decoration: none;
+
 }
+
 .logo a:hover {
     fill:#33394C ;
 }
@@ -19,21 +19,10 @@ padding-bottom: 40px;
 width: 260px;
 }
 
-.title {
-margin-bottom: 6px;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    letter-spacing: -0.018em;
 
-    color: #00071F;
-
-
-
-}
 
 .subtitle {
-
+    margin-top: 10px;
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;

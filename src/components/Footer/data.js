@@ -1,5 +1,15 @@
+function checkMailtoSupport(email) {
+    const isMailtoSupported = document.createElement('a');
+    isMailtoSupported.href = `mailto:${email}`;
+    if (isMailtoSupported.protocol === 'mailto:') {
+        window.location.href = `mailto:${email}`;
+    } else {
+        alert('Ваш браузер не поддерживает mailto ссылки');
+    }
+}
+
 export const footer = {
-    title: 'Ипотека здесь',
+
     subtitle: 'Центр ипотеки и страхования',
 
     sections: [
@@ -16,8 +26,8 @@ export const footer = {
         {
             title: 'Соц сети',
             items: [
-                {label: 'Wattsap', url: '#!'},
-                {label: 'Почта', url: '#!'},
+                {label: 'Wattsap', url: 'https://wa.me/79883487755'},
+                {label: 'Почта', onClick: () => checkMailtoSupport('ipoteka.Zdes@yandex.ru')},
                 {label: 'Telegram', url: '#!'},
             ],
         },

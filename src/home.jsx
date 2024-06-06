@@ -92,44 +92,35 @@ const reviews = [
     {
         id: 1,
         heading: {
-            avatar: "/women.png",
-            FLName: "Иван Иванов",
+            avatar: "/womenF.jpg",
+            FLName: "Кира Золотарева",
         },
         review: {
-            comment: "Очень доволен работой компании \n" +
-                "по ипотеке. Они предоставили мне исчерпывающую информацию о различных ипотечных продуктах и предоставили подробную консультацию"
+            comment: "Хочу выразить свою искреннюю благодарность ипотечным брокерам за их профессионализм и отличное обслуживание, с самого начала процесса они проявили высочайший уровень знаний и умений, которые существенно помогли нам в поиске и оформлении наилучших ипотечных условий. Благодаря их внимательности и ответственному подходу, мы чувствовали себя уверенно на каждом этапе. "
         }
     },
     {
         id: 2,
         heading: {
-            avatar: "/women.png",
-            FLName: "Анна Петрова",
+            avatar: "/man.jpg",
+            FLName: "Арсений Кондратьев",
         },
         review: {
-            comment: "Процесс получения ипотеки был четким и прозрачным, сотрудники компании всегда на связи и готовы помочь. Спасибо за профессиональную помощь!"
+            comment: "Очень доволен работой компании \n" +
+                "по ипотеке. Специалисты предоставили мне исчерпывающую информацию о различных ипотечных продуктах, и помогли найти оптимальный вариант, который идеально соответствовал моим финансовым возможностям и жилищным потребностям. Сотрудники компании были предельно внимательны и терпеливы, детально разъясняя все нюансы и условия договора. Особенно хочу отметить их готовность всегда идти на контакт и оперативность в решении всех возникающих вопросов. Эффективность и клиентоориентированность команды оставили самые приятные воспоминания о сотрудничестве"
         }
     },
     {
         id: 3,
         heading: {
-            avatar: "/women.png",
-            FLName: "Анна Петрова",
+            avatar: "/womensha.jpg",
+            FLName: "София Ермакова",
         },
         review: {
-            comment: "Профессиональные и отзывчивые ипотечные брокеры! Они помогли мне с выбором ипотечной программы, нашли выгодные условия и провели через весь процесс без проблем. Очень доволен результатом! Рекомендую!"
+            comment: "Профессиональные и отзывчивые ипотечные брокеры! Они помогли мне с выбором ипотечной программы, нашли выгодные условия и провели через весь процесс без проблем. Очень довольна результатом! Рекомендую!"
         }
     },
-    {
-        id: 4,
-        heading: {
-            avatar: "/women.png",
-            FLName: "Анна Петрова",
-        },
-        review: {
-            comment: "Профессиональные и отзывчивые ипотечные брокеры! Они помогли мне с выбором ипотечной программы, нашли выгодные условия и провели через весь процесс без проблем. Очень доволен результатом! Рекомендую!"
-        }
-    }
+
 
 ];
 
@@ -138,70 +129,70 @@ function Home(props) {
 
 
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+ useEffect(() => {
+     window.scrollTo(0, 0);
+ }, []);
 
-    return (
-        <AnimatePresence>
-            <motion.div
-                initial={{opacity: 0, y: 20}}
-                animate={{opacity: 1, y: 0}}
-                exit={{opacity: 0, y: -20}}
-                transition={{duration: 0.3}}
-                className={cn(styles.container, props.className)}
-            >
-                <>
-                    <div className="container">
-                        <Header className={styles.header} showButtonContact={true} showSocial={true}
-                                navbarItems={navbarItems} />
-                        <Preview className={styles.preview} title={(<>Ипотека здесь: <br/>
-                            Дом мечты-<br/>
-                            Это реально</>)}
-                                 textButton="Получить консультацию"
-                                 image="Cards"
-                                 width="566px" isIcon={true}>
-                            Откройте двери своего нового дома <br/>
-                            с нашим ипотечным центром
-                        </Preview>
-                        <Partners/>
-                        <Zigzag/>
-                        <Heading className={`${styles.advantageTitle} ${styles.centered}`}
-                                 title={sectionHeadings.advantage}/>
-                        <Advantage/>
-                        <Zigzag/>
-                        <Statistic/>
-                        <Zigzag/>
-                        <AboutCompany></AboutCompany>
-                        <Zigzag/>
-                        <Command/>
-                        <Zigzag/>
-                        <Heading className={`${styles.faqTitle} ${styles.centered}`} title={sectionHeadings.faq}/>
-                        <Faq data={FAQHomeData} className={styles.faq}/>
-                        <Programs />
-                        <Service data={cards} className={styles.service}/>
-                        <Zigzag/>
-                        <Heading className={`${styles.stagesTitle} ${styles.centered}`} title={sectionHeadings.stages}/></div>
-                    <Stages data={cardStage} className={styles.stages}/>
-                    <div className="container">
-                        <Form className={styles.form} title="Плохая кредитная история, отказали несколько банков,
+ return (
+     <AnimatePresence>
+         <motion.div
+             initial={{opacity: 0, y: 20}}
+             animate={{opacity: 1, y: 0}}
+             exit={{opacity: 0, y: -20}}
+             transition={{duration: 0.3}}
+             className={cn(styles.container, props.className)}
+         >
+             <>
+                 <div className="container">
+                     <Header className={styles.header} showButtonContact={true} showSocial={true}
+                             navbarItems={navbarItems} />
+                     <Preview className={styles.preview} title={(<>Ипотека здесь: <br/>
+                         Дом мечты-<br/>
+                         Это реально</>)}
+                              textButton="Получить консультацию"
+                              image="Cards"
+                              width="566px" isIcon={true}>
+                         Откройте двери своего нового дома <br/>
+                         с нашим ипотечным центром
+                     </Preview>
+                     <Partners/>
+                     <Zigzag/>
+                     <Heading className={`${styles.advantageTitle} ${styles.centered}`}
+                              title={sectionHeadings.advantage}/>
+                     <Advantage/>
+                     <Zigzag/>
+                     <Statistic/>
+                     <Zigzag/>
+                     <AboutCompany></AboutCompany>
+                     <Zigzag/>
+                     <Command/>
+                     <Zigzag/>
+                     <Heading className={`${styles.faqTitle} ${styles.centered}`} title={sectionHeadings.faq}/>
+                     <Faq data={FAQHomeData} className={styles.faq}/>
+                     <Programs />
+                     <Service data={cards} className={styles.service}/>
+                     <Zigzag/>
+                     <Heading className={`${styles.stagesTitle} ${styles.centered}`} title={sectionHeadings.stages}/></div>
+                 <Stages data={cardStage} className={styles.stages}/>
+                 <div className="container">
+                     <Form className={styles.form} title="Плохая кредитная история, отказали несколько банков,
 или нет первого взноса?"
-                              subtitle="Не беспокойтесь! Наши специалисты успешно решают сложные ситуации с ипотекой в любом регионе России. Работаем до положительного решения банка. Заполните форму, и вам окажут помощь в решении всех вопросов!"/>
-                        <Review className={styles.review} data={reviews}/>
-                        <Contacts data={info} className={styles.contacts}/>
-                        <Zigzag/>
-                        <Form
-                            title="Заявка на бесплатную консультацию"
-                            subtitle="Не откладывайте решение вопросов на потом.
+                           subtitle="Не беспокойтесь! Наши специалисты успешно решают сложные ситуации с ипотекой в любом регионе России. Работаем до положительного решения банка. Заполните форму, и вам окажут помощь в решении всех вопросов!"/>
+                     <Review className={styles.review} data={reviews}/>
+                     <Contacts data={info} className={styles.contacts}/>
+                     <Zigzag/>
+                     <Form
+                         title="Заявка на бесплатную консультацию"
+                         subtitle="Не откладывайте решение вопросов на потом.
 Заполните форму ниже, и наши специалисты вам перезвонят!"
-                            className2={styles.consultationForm} className={styles.consultation} showCloseButton={false}>
-                        </Form>
-                        <Footer data={footer} className={styles.footer}/>
-                    </div>
-                </>
-            </motion.div>
-        </AnimatePresence>
-    );
+                         className2={styles.consultationForm} className={styles.consultation} showCloseButton={false}>
+                     </Form>
+                     <Footer data={footer} className={styles.footer}/>
+                 </div>
+             </>
+         </motion.div>
+     </AnimatePresence>
+ );
 }
 
 export default Home;

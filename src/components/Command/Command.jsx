@@ -10,10 +10,10 @@ function Command(props) {
             <div id="comand" className={cn(styles.wrap, props.className)}>
                 <Heading className={`${styles.comandTitle} ${styles.centered}`} title="Наша команда"/>
                 <div className={styles.comand}>
-                    <PersonalCard imageUrl="/persona.png" name="Пивоварова Анна" position="Ипотечный брокер"/>
-                    <PersonalCard imageUrl="/persona.png" name="Евдокимова Анна" position="Юрист"/>
-                    <PersonalCard imageUrl="/persona.png" name="Ситникова Марина" position="Ипотечный брокер"/>
-                    <PersonalCard imageUrl="/persona.png" name="Суслова Алёна" position="Юрист"/></div>
+                    <PersonalCard imageUrl="/anna.png" name="Пивоварова Анна" position="Ипотечный брокер"/>
+                    <PersonalCard imageUrl="/marine.png" name="Ситникова Марина" position="Юрист"/>
+                    <PersonalCard imageUrl="/ann1.png" name="Евдокимова Анна" position="Ипотечный брокер"/>
+                    <PersonalCard imageUrl="/alen.png" name="Суслова Алёна" position="Юрист"/></div>
 
             </div>
         </>

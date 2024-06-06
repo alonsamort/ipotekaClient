@@ -31,7 +31,7 @@ const navigation={
                 <Swiper
                     style={{paddingLeft:"19%",  paddingBottom: "60px"}}
                     modules={[Navigation, Pagination, A11y]}
-                    spaceBetween={-280}
+                    spaceBetween={30}
                     slidesPerView={3}
 
                     navigation={
@@ -40,9 +40,19 @@ const navigation={
                     pagination
                     breakpoints={{
 
+
                         1440: {
                             slidesPerView: 2,
                             spaceBetween: -300,
+                        },
+
+                        1920: {
+                            slidesPerView: 3,
+                            spaceBetween: -280,
+                        },
+                        2560: {
+                            slidesPerView: 4,
+                            spaceBetween: -200,
                         },
 
                     }}
