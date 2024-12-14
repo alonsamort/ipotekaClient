@@ -24,8 +24,8 @@ export const footer = {
         {
             title: 'Информация',
             items: [
-                {label: 'Лицензия', url: '#!'},
-                {label: 'Политика', url: '#!'},
+                {label: 'Сертификаты', url: 'certificates'},
+                {label: 'Политика конфиденциальности', url: 'privacy'},
             ],
         },
     ],

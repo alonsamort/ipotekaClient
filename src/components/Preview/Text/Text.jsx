@@ -24,7 +24,8 @@ function Text(props) {
                     <Title className={styles.title}>{props.title}</Title>
                     <Subtitle className={styles.subtitle}>{props.children}</Subtitle>
                 </div>
-                <Button onClick={openModal} className={styles.button}>
+                <Button onClick={openModal} className={styles.button} showIcon={true}  gradient="linear-gradient(88.67deg, #0057FF 5.1%, #00C2FF 96.41%)"
+                        hoverGradient="linear-gradient(88.67deg, #3379FF 5.1%, #33CEFF 96.41%)" >
                     {props.textButton}
                 </Button>
                 {isModalOpen && (

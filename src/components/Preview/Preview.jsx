@@ -17,7 +17,7 @@ function Preview(props) {
                         <Spiner className={styles.spinner}/>
                     </div>
                 )}
-                <Images className={styles.images} image={props.image} width={props.width}/>
+                <Images className={styles.images} image={props.image} width="566px"/>
                 {
                     props.isIcon && (
                         <>

@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  user-select: none;
 }
 h1,
 h2,
@@ -10,6 +11,7 @@ h6,
 p {
   margin: 0;
 }
+
 * {
   font-family: "Inter", serif;
   color: #00071f;
@@ -34,5 +36,13 @@ p {
 @media screen and (max-width: 425px) {
   .container {
     padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 375px;
+    padding: 20px;
+    align-items: center;
   }
 }

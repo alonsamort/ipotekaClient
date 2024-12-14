@@ -12,18 +12,9 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-width: 259px;
 
     cursor: pointer;
 
-    background: linear-gradient(88.67deg, #0057FF 5.1%, #00C2FF 96.41%);
-
 margin-top: 40px;
-
-}
-.wrap:hover {
-      color: #F7F8F8;
-        background: linear-gradient(88.67deg, #3379FF 5.1%, #33CEFF 96.41%);
-
 
 }

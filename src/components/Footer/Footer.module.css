@@ -13,6 +13,8 @@ display: grid;
 gap: 80px;
 padding-bottom: 40px;
 
+
+
 }
 
 .brandSection {
@@ -80,6 +82,7 @@ width: 260px;
 .section{
     max-width: 130px;
 gap: 80px;
+    padding-right: 60px;
 }
 .organizationalInfo{
     display: grid;

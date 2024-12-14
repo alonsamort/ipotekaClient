@@ -6,6 +6,9 @@
 .text{
     padding-top: 72px;
 }
+.images{
+    width: 566px;
+}
 .check{
     position: absolute;
     transform: translateY(-10px)translateX(1115px) rotate(-10deg);
@@ -43,5 +46,17 @@
 @media screen and (max-width: 1200px) {
 
 
+
+}
+@media screen and (max-width: 375px) {
+    .wrap {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text {
+        padding-top: 30px;
+    }
 
 }

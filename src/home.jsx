@@ -151,7 +151,7 @@ function Home(props) {
                          Это реально</>)}
                               textButton="Получить консультацию"
                               image="Cards"
-                              width="566px" isIcon={true}>
+                               isIcon={true}>
                          Откройте двери своего нового дома <br/>
                          с нашим ипотечным центром
                      </Preview>
