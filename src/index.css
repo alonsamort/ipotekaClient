@@ -16,6 +16,7 @@ p {
   font-family: "Inter", serif;
   color: #00071f;
   font-style: normal;
+
 }
 .container {
   max-width: 1190px;
@@ -40,9 +41,10 @@ p {
 }
 
 @media screen and (max-width: 375px) {
+  body {
+   width: 100%;
+  }
   .container {
-    width: 375px;
-    padding: 20px;
-    align-items: center;
+    padding: 0 20px;
   }
 }

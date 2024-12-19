@@ -6,3 +6,10 @@
 
     color: #8C8F9A;
 }
+@media screen and (max-width: 375px) {
+    .wrap {
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: -0.012em;
+    }
+}
