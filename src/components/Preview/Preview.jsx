@@ -13,7 +13,7 @@ function Preview(props) {
 
                 <Text className={styles.text} title={props.title} textButton={props.textButton}>{props.children}</Text>
                 {props.isIcon && (
-                    <div style={{width:"0px"}}>
+                    <div className={styles.spin} style={{width:"0px"}}>
                         <Spiner className={styles.spinner}/>
                     </div>
                 )}

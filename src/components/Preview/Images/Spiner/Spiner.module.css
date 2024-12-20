@@ -34,3 +34,13 @@
     position: absolute;
     transform: translateX(0px) translateY(-136px) ;
 }
+
+@media screen and (max-width: 425px) {
+    .spiner{
+        width: 100px;
+        height: 100px;
+    }
+    .arrow{
+        transform: translateX(-17px) translateY(-122px) ;
+    }
+}

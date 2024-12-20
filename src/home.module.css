@@ -58,3 +58,8 @@
   margin:92px auto;
 
 }
+@media screen and (max-width: 425px) {
+  .preview {
+    margin-top: 32px;
+  }
+}

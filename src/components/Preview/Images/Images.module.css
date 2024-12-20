@@ -1,3 +1,21 @@
 .spinner {
 
 }
+@media screen and (max-width: 425px) {
+    .cards {
+        width: 385px;
+       height: 300px;
+
+    }
+
+
+}
+@media screen and (max-width: 375px) {
+    .cards {
+        width: 335px;
+        height: 280px;
+
+    }
+
+
+}
