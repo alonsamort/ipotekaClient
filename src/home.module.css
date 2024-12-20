@@ -62,4 +62,10 @@
   .preview {
     margin-top: 32px;
   }
+  .centered{
+    text-align: center;
+
+  }
+  .advantageTitle{
+    margin-top: 60px;}
 }

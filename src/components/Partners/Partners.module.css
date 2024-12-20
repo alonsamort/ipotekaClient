@@ -17,3 +17,8 @@ margin: 132px 0 92px 0px;
     justify-self: center;
     padding-bottom: 32px;
 }
+@media (max-width: 425px) {
+    .wrap {
+        margin: 80px 0 40px 0px;
+    }
+}

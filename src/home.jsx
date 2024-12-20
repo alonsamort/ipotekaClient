@@ -72,7 +72,7 @@ const FAQHomeData = [
     },
 ];
 const sectionHeadings = {
-    advantage: "Почему обращаются к нам",
+    advantage: "Почему к нам обращаются",
     team: "Наша команда",
     faq: "Часто задаваемые вопросы",
     stages: "Этапы оформления ипотеки ",
