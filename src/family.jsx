@@ -20,7 +20,7 @@ import { cards as cardStage } from "./components/Stages/data";
 import { motion, AnimatePresence } from 'framer-motion';
 
 const family = [
-    { title: 'от 5%', subtitle: 'Ипотечная ставка' },
+    { title: 'от 6%', subtitle: 'Ипотечная ставка' },
     { title: '30 лет', subtitle: 'Срок кредита' },
     { title: '300 тыс.', subtitle: 'Мин. сумма кредита' },
     { title: '12 млн', subtitle: 'Макс. сумма кредита' },

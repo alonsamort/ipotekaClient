@@ -8,7 +8,7 @@ function Card(props) {
     return (
         <>
             <div className={cn(styles.wrap, props.className)}>
-                <img src={props.imageUrl} alt="картинка" width="124px" height="124px" />
+                <img className={styles.image} src={props.imageUrl} alt="картинка" width="124px" height="124px" />
                 <div className={styles.content}>
                     <h2 className={styles.title}>{props.title}</h2>
                     <p className={styles.description}>{props.description}</p>

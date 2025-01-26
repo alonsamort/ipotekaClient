@@ -7,3 +7,9 @@ max-width: 1190px;
     align-items: flex-start;
 gap: 32px;
 }
+@media (max-width: 425px) {
+    .wrap {
+        grid-template-columns: 1fr;
+
+    }
+}

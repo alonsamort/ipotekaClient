@@ -5,8 +5,6 @@ import "./index.css";
 import Family from "./family";
 import Home from "./home";
 import Secondary from "./secondary";
-import Support from "./support";
-import Refinancing from "./refinancing";
 import Build from "./build";
 import Commerce from "./commerce";
 import Privacy from "./privacy";
@@ -22,8 +20,6 @@ ReactDOM.render(
                     <Route path="/" element={<Home />} />
                     <Route path="/family" element={<Family />} />
                     <Route path="/secondary" element={<Secondary />} />
-                    <Route path="/support" element={<Support />} />
-                    <Route path="/refinancing" element={<Refinancing />} />
                     <Route path="/build" element={<Build />} />
                     <Route path="/commerce" element={<Commerce />} />
                     <Route path="/privacy" element={<Privacy />} />
