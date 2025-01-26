@@ -9,7 +9,6 @@ import Heading from "./components/Heading";
 import {advantsgeItems, CardsList} from "./components/Cards/Cards";
 import Conditions from "./components/Conditions";
 import Form from "./components/Form";
-import {card} from "./components/Review/data";
 import Review from "./components/Review";
 import Contacts from "./components/Contacts";
 import {info} from "./components/Contacts/data";
@@ -21,7 +20,7 @@ import {cards as cardStage} from "./components/Stages/data";
 import { motion, AnimatePresence } from 'framer-motion';
 
 const secondary = [
-    {title: 'от 5,8%', subtitle: 'Ипотечная ставка'},
+    {title: 'от 6%', subtitle: 'Ипотечная ставка'},
     {title: '30 лет', subtitle: 'Срок кредита'},
     {title: '300 тыс.', subtitle: 'Мин. сумма кредита'},
     {title: '100 млн', subtitle: 'Макс. сумма кредита'},
@@ -86,15 +85,49 @@ function Build(props) {
     ];
     const breadcrumb = [
         {
-            label: 'Главная', link: '#aboutBlock'
+            label: 'Главная', path: '/'
         },
-        {
-            label: 'Ипотечные программы', link: '#aboutBlock'
-        }, {
+         {
             label: 'Ипотека на строительство дома', link: '#aboutBlock'
         },
 
     ];
+    const reviews = [
+        {
+            id: 1,
+            heading: {
+                avatar: "/womenF.jpg",
+                FLName: "Кира Золотарева",
+            },
+            review: {
+                comment: "Хочу выразить свою искреннюю благодарность ипотечным брокерам за их профессионализм и отличное обслуживание, с самого начала процесса они проявили высочайший уровень знаний и умений, которые существенно помогли нам в поиске и оформлении наилучших ипотечных условий. Благодаря их внимательности и ответственному подходу, мы чувствовали себя уверенно на каждом этапе. "
+            }
+        },
+        {
+            id: 2,
+            heading: {
+                avatar: "/man.jpg",
+                FLName: "Арсений Кондратьев",
+            },
+            review: {
+                comment: "Очень доволен работой компании \n" +
+                    "по ипотеке. Специалисты предоставили мне исчерпывающую информацию о различных ипотечных продуктах, и помогли найти оптимальный вариант, который идеально соответствовал моим финансовым возможностям и жилищным потребностям. Сотрудники компании были предельно внимательны и терпеливы, детально разъясняя все нюансы и условия договора. Особенно хочу отметить их готовность всегда идти на контакт и оперативность в решении всех возникающих вопросов. Эффективность и клиентоориентированность команды оставили самые приятные воспоминания о сотрудничестве"
+            }
+        },
+        {
+            id: 3,
+            heading: {
+                avatar: "/womensha.jpg",
+                FLName: "София Ермакова",
+            },
+            review: {
+                comment: "Профессиональные и отзывчивые ипотечные брокеры! Они помогли мне с выбором ипотечной программы, нашли выгодные условия и провели через весь процесс без проблем. Очень довольна результатом! Рекомендую!"
+            }
+        },
+
+
+    ];
+
 
     return (
         <AnimatePresence>
@@ -105,76 +138,79 @@ function Build(props) {
                 transition={{ duration: 0.3 }}
                 className={cn(styles.container, props.className)}
             >
-        <>
-            <div className={cn(styles.container, props.className)}>
+                <>
+                    <div className="container">
 
-                <Header className={styles.otherPage} showButtonContact={false} showSocial={false}
-                        navbarItems={navbarItems}/>
-                <Preview className={styles.preview} isIcon={false}
-                         title={(<>Ипотека на строительство дома</>)}
-                         textButton="Получить ипотеку "
-                         image="brick"
-                         width="420px"
+                        <Header className={styles.otherPage} showButtonContact={false} showSocial={false}
+                                navbarItems={navbarItems}/>
+                        <Preview className={styles.preview} isIcon={false}
+                                 title={(<>Ипотека на строительство дома</>)}
+                                 textButton="Получить ипотеку "
+                                 image="brick"
+                                 width="420px"
 
-                >
-                    Стройте свой дом с уверенностью. Ипотека
-                    на<br/> строительство – ваш путь к собственному уголку!
-                </Preview>
-                <Scorecard items={secondary} className={styles.scorecard}/>
-                <Zigzag/>
-                <Heading className={`${styles.aboutTitle} ${styles.centered}`} title={sectionHeadings.conditions}/>
-                <CardsList className={styles.cardsList} padding={"24px"} background items={advantsge} icon={(
-                    <svg style={{minWidth: "24px", minHeight: "24px"}} width="26" height="26" viewBox="0 0 26 26"
-                         fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M12.4193 15.802L8.72051 12.1031L6.87109 13.9525L12.4193 19.5008L21.6664 10.2537L19.817 8.4043L12.4193 15.802Z"
-                            fill="#00071F"/>
-                    </svg>
+                        >
+                            Стройте свой дом с уверенностью. Ипотека
+                            на<br/> строительство – ваш путь к собственному уголку!
+                        </Preview>
+                        <Scorecard items={secondary} className={styles.scorecard}/>
+                        <Zigzag/>
+                        <Heading className={`${styles.aboutTitle} ${styles.centered}`}
+                                 title={sectionHeadings.conditions}/>
+                        <CardsList className={styles.cardsList} padding={"24px"} background items={advantsge} icon={(
+                            <svg style={{minWidth: "24px", minHeight: "24px"}} width="26" height="26"
+                                 viewBox="0 0 26 26"
+                                 fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12.4193 15.802L8.72051 12.1031L6.87109 13.9525L12.4193 19.5008L21.6664 10.2537L19.817 8.4043L12.4193 15.802Z"
+                                    fill="#00071F"/>
+                            </svg>
 
 
-                )}/>
+                        )}/>
 
-                <Conditions className={styles.conditions} items={newItems}
-                            icon={<svg style={{minWidth: "16px", minHeight: "24px"}} width="16" height="24"
-                                       viewBox="0 0 16 24"
-                                       fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <Conditions className={styles.conditions} items={newItems}
+                                    icon={<svg style={{minWidth: "16px", minHeight: "24px"}} width="16" height="24"
+                                               viewBox="0 0 16 24"
+                                               fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line y1="10.5" x2="16" y2="10.5" stroke="#00071F"/>
+                                    </svg>} image="wall" width='566px' className={styles.conditions}/>
+
+                        <Zigzag/>
+                        <Form className={styles.form} title="Начнем строительство вашего дома вместе!"
+                              subtitle="Оставьте нам свои контактные данные, и мы разработаем ипотечный план, идеально подходящий для строительства вашего дома"/>
+
+
+                        <Heading className={`${styles.stagesTitle} ${styles.centered}`} title={sectionHeadings.stages}/>
+                    </div>
+                    <Stages data={cardStage} className={styles.stages}/>
+
+                    <div className="container">
+                        <Conditions className={styles.insurence} image="insurence" width='446px' items={insurance}
+                                    flexDirection={"row-reverse"} button={true} icon={(
+                            <svg style={{minWidth: "16px", minHeight: "24px"}} width="16" height="24"
+                                 viewBox="0 0 16 24"
+                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <line y1="10.5" x2="16" y2="10.5" stroke="#00071F"/>
-                            </svg>} image="wall" width='566px' className={styles.conditions}/>
-
-                <Zigzag/>
-                <Form className={styles.form} title="Начнем строительство вашего дома вместе!"
-                      subtitle="Оставьте нам свои контактные данные, и мы разработаем ипотечный план, идеально подходящий для строительства вашего дома"/>
+                            </svg>
 
 
-                <Heading className={`${styles.stagesTitle} ${styles.centered}`} title={sectionHeadings.stages}/>
-                <Stages data={cardStage} className={styles.stages}/>
+                        )}/>
 
-
-                <Conditions className={styles.insurence} image="insurence" width='446px' items={insurance}
-                            flexDirection={"row-reverse"} button={true} icon={(
-                    <svg style={{minWidth: "16px", minHeight: "24px"}} width="16" height="24" viewBox="0 0 16 24"
-                         fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line y1="10.5" x2="16" y2="10.5" stroke="#00071F"/>
-                    </svg>
-
-
-                )}/>
-                <Heading className={`${styles.reviewTitle} ${styles.centered}`} title={sectionHeadings.review}/>
-                <Review data={card}/>
-                <Heading className={`${styles.contactsTitle} ${styles.centered}`} title={sectionHeadings.contacts}/>
-                <Contacts data={info} className={styles.contacts}/>
-                <Breadcrumbs className={styles.breadcrumbs} items={breadcrumb}
-                             icon={<svg className={styles.svg} style={{minWidth: "18px", minHeight: "18px"}} width="24"
-                                        height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                 <path
-                                     d="M7.75694 6.34292L9.17115 4.92871L16.2422 11.9998L9.17112 19.0708L7.75691 17.6566L13.4138 11.9998L7.75694 6.34292Z"
-                                     fill="#666A79"/>
-                             </svg>
-                             }/>
-                <Footer className={styles.footer} hideContentGrid={true}/>
-            </div>
-        </>
+                        <Review className={styles.review} data={reviews}/>
+                        <Contacts data={info} className={styles.contacts}/>
+                        <Breadcrumbs className={styles.breadcrumbs} items={breadcrumb}
+                                     icon={<svg className={styles.svg} style={{minWidth: "18px", minHeight: "18px"}}
+                                                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                         <path
+                                             d="M7.75694 6.34292L9.17115 4.92871L16.2422 11.9998L9.17112 19.0708L7.75691 17.6566L13.4138 11.9998L7.75694 6.34292Z"
+                                             fill="#666A79"/>
+                                     </svg>}
+                        />
+                        <Footer className={styles.footer} hideContentGrid={true}/>
+                    </div>
+                </>
             </motion.div>
         </AnimatePresence>
     );

@@ -9,7 +9,7 @@ import Heading from "./components/Heading";
 import {advantsgeItems, CardsList} from "./components/Cards/Cards";
 import Conditions from "./components/Conditions";
 import Form from "./components/Form";
-import {card} from "./components/Review/data";
+
 import Review from "./components/Review";
 import Contacts from "./components/Contacts";
 import {info} from "./components/Contacts/data";
@@ -21,7 +21,7 @@ import {cards as cardStage} from "./components/Stages/data";
 import { motion, AnimatePresence } from 'framer-motion';
 
 const secondary = [
-    { title: 'от 16,5%', subtitle: 'Ипотечная ставка' },
+    { title: 'от 25%', subtitle: 'Ипотечная ставка' },
     { title: '30 лет', subtitle: 'Срок кредита' },
     { title: '300 тыс.', subtitle: 'Мин. сумма кредита' },
     { title: '100 млн', subtitle: 'Макс. сумма кредита' },
@@ -41,6 +41,41 @@ const sectionHeadings = {
     stages:"Этапы оформления ипотеки"
 
 };
+const reviews = [
+    {
+        id: 1,
+        heading: {
+            avatar: "/womenF.jpg",
+            FLName: "Кира Золотарева",
+        },
+        review: {
+            comment: "Хочу выразить свою искреннюю благодарность ипотечным брокерам за их профессионализм и отличное обслуживание, с самого начала процесса они проявили высочайший уровень знаний и умений, которые существенно помогли нам в поиске и оформлении наилучших ипотечных условий. Благодаря их внимательности и ответственному подходу, мы чувствовали себя уверенно на каждом этапе. "
+        }
+    },
+    {
+        id: 2,
+        heading: {
+            avatar: "/man.jpg",
+            FLName: "Арсений Кондратьев",
+        },
+        review: {
+            comment: "Очень доволен работой компании \n" +
+                "по ипотеке. Специалисты предоставили мне исчерпывающую информацию о различных ипотечных продуктах, и помогли найти оптимальный вариант, который идеально соответствовал моим финансовым возможностям и жилищным потребностям. Сотрудники компании были предельно внимательны и терпеливы, детально разъясняя все нюансы и условия договора. Особенно хочу отметить их готовность всегда идти на контакт и оперативность в решении всех возникающих вопросов. Эффективность и клиентоориентированность команды оставили самые приятные воспоминания о сотрудничестве"
+        }
+    },
+    {
+        id: 3,
+        heading: {
+            avatar: "/womensha.jpg",
+            FLName: "София Ермакова",
+        },
+        review: {
+            comment: "Профессиональные и отзывчивые ипотечные брокеры! Они помогли мне с выбором ипотечной программы, нашли выгодные условия и провели через весь процесс без проблем. Очень довольна результатом! Рекомендую!"
+        }
+    },
+
+
+];
 
 
 function Secondary(props) {
@@ -50,8 +85,8 @@ function Secondary(props) {
 
    const advantsge = [
         {
-            title: 'Без подтверждения дохода',
-            items: ['Оформление по паспорту', 'Подтверждение доходов не требуется']
+            title: 'Подтверждениe дохода',
+            items: ['Подтверждение дохода через ПФР', '2 ндфл или справка по форме банка']
         },
         {
             title: 'На срок от 1 до 30 лет',
@@ -162,7 +197,7 @@ function Secondary(props) {
 
                         )}/>
 
-                        <Review className={styles.review} data={card}/>
+                        <Review className={styles.review} data={reviews}/>
 
                         <Contacts data={info} className={styles.contacts}/>
                         <Breadcrumbs className={styles.breadcrumbs} items={breadcrumb}

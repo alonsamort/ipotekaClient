@@ -30,7 +30,7 @@ export const footer = {
         },
     ],
     organizationDetails: [
-        '© 2024 ipoteka.zdes',
+        '© 2025 ipoteka.zdes',
         'ИНН: 503113605694',
         'ОГРНИП: 322508100419700',
 

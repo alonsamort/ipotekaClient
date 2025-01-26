@@ -5,13 +5,16 @@ import { CardsList } from "../Cards/Cards";
 import Button from "../Preview/Button";
 import Form from "../Form";
 
+
 export const defaultItems = [
     {
         title: 'Требования к заёмщику',
         items: [
             'Заёмщик — гражданин Российской Федерации',
-            'Возраст заёмщика от 20 до 70 лет (параметр определяется банком);',
-            'Без ранее выданной льготной ипотеки с 23.12.2023'
+            'Возраст заёмщика от 18 до 75 лет (параметр определяется банком);',
+            'Без ранее выданной льготной ипотеки с 23.12.2023',
+            'Если квартира от застройщика, ребенку должно быть до 7-ми лет;',
+            'Если покупается дом либо ИЖС, то один ребенок до 7-ми лет, либо двое несовершеннолетних'
         ]
     },
     {
@@ -42,8 +45,9 @@ function Conditions(props) {
                 <div className={styles.info}>
                     <CardsList className={styles.cardsList} items={items} icon={props.icon} />
                     {props.button && (
-                        <Button disableAnimation={true} onClick={openModal} className={styles.button}>
-                            Получить страхование
+                        <Button onClick={openModal} className={styles.button} showIcon={false}  gradient="linear-gradient(88.67deg, #0057FF 5.1%, #00C2FF 96.41%)"
+                                hoverGradient="linear-gradient(88.67deg, #3379FF 5.1%, #33CEFF 96.41%)" >
+                          Получить страхование
                         </Button>
                     )}
                     {isModalOpen && (
