@@ -23,7 +23,7 @@ export const info=[{
     id: 4,
     contacts: {
         item: 'ipoteka.zdes',
-        url: 'https://wa.me/79883487755',
+        url: 'https://t.me/AnnaipotekaZdes',
         subtitle: 'Telegram',
     },
 }]

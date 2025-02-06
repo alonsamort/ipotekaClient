@@ -5,7 +5,7 @@ import cn from "classnames";
 function Social(props) {
     return (
         <div className={cn(styles.wrap, props.className)}>
-            <a href="ссылка_на_телеграм" target="_blank">
+            <a href="https://t.me/AnnaipotekaZdes" target="_blank">
                 <svg className="telegram" width="28" height="28" viewBox="0 0 24 24" fill="00071F"
                      xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
